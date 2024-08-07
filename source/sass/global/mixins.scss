@@ -155,7 +155,6 @@
   line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--primary);
 
   @media #{$not-mobile} {
     font-size: 16px;
@@ -168,7 +167,6 @@
   font-size: 16px;
   line-height: 1;
   text-align: center;
-  color: var(--primary);
 }
 
 @mixin button {
@@ -176,7 +174,6 @@
   font-weight: var(--font-weight, 400);
   font-size: 14px;
   line-height: 1;
-  color: var(--primary);
 
   @media #{$desktop-only} {
     font-size: 16px;

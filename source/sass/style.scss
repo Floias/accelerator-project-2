@@ -1,7 +1,7 @@
 // Vendor
 
 @import "vendor/normalize";
-@import "./vendor/swiper";
+//@import "./vendor/swiper";
 
 // глобальные стили
 @import "./global/fonts";
@@ -9,3 +9,7 @@
 @import "./global/mixins";
 @import "./global/variables";
 @import "./global/utils";
+
+// стили блоков
+@import "./blocks/page";
+@import "./blocks/header";

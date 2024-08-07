@@ -5,18 +5,52 @@
     <meta charset="UTF-8">
     <meta name="description" content="Сайт">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
+    <title>Lifetour. Организация походов в горы.</title>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page__body">
-    <!-- пример использования спрайта -->
+    <header class="header" data-test="header">
+      <div class="header__container">
+        <a class="header__logo">
+          <img src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour." width="142" height="42">
+        </a>
+        <nav class="header__navigation">
+          <!-- header__navigation-list--close -->
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Туры</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Обучение</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">О&nbsp;нас</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Отзывы</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Фотографии</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+        </nav>
+        <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
+      </div>
+    </header>
+    <main></main>
+<!--     пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
+    </svg> -->
+    <div >header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
