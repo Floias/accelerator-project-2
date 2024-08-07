@@ -1,3 +1,15 @@
+@mixin container {
+  width: $breakpoint-mobile;
+
+  @media #{$not-mobile} {
+    width: $breakpoint-tablet;
+  }
+
+  @media #{$desktop-only} {
+    width: $breakpoint-desktop;
+  }
+}
+
 @mixin reset-list {
   margin: 0;
   padding: 0;
