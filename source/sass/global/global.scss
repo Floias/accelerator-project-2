@@ -1,0 +1,35 @@
+:root {
+  --primary: #2d383f;
+  --error: #ff121f;
+  --active: #1c3374;
+  --stroke-br: rgba(45, 56, 63, 0.2);
+  --disabled: #999;
+  --white-100: #fff;
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --additional-100: #0266c1;
+  --additional-20: rgba(2, 102, 193, 0.1);
+  --additional-10: rgba(2, 102, 193, 0.1);
+  --overlay-50: rgba(0, 0, 0, 0.5);
+  --dark: #030a1a;
+  --font-family: "Montserrat", "Arial", sans-serif;
+  --font-weight-light: 300;
+  --font-weight: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
