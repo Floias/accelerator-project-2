@@ -13,12 +13,13 @@
   display: grid;
 
   @media #{$not-mobile} {
-    padding: 20px 45px;
+    padding: 19px 45px;
     grid-template-columns: repeat(3, 226px);
     align-items: center;
   }
 
   @media #{$desktop-only} {
+    padding: 41px 120px;
     grid-template-columns: 205px 838px 1fr;
   }
 }
@@ -62,8 +63,8 @@
   place-items: center;
   inline-size: 30px;
   block-size: 30px;
-  inset-block-start: 15px;
-  inset-inline-start: 15px;
+  inset-block-start: 13px;
+  inset-inline-start: 13px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -73,7 +74,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 24px;
+    width: 30px;
     height: 2px;
     background-color: #ffffff;
   }
@@ -88,8 +89,8 @@
   }
 
   @media #{$not-mobile} {
-    inset-block-start: 20px;
-    inset-inline-start: 45px;
+    inset-block-start: 26px;
+    inset-inline-start: 43px;
   }
 
   @media #{$desktop-only} {
@@ -99,7 +100,7 @@
 
 .header__navigation-list {
   @include reset-list;
-  padding: 27px 0;
+  padding: 25px 0;
   display: grid;
   gap: 16px;
 
@@ -113,14 +114,18 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 0;
   }
 }
 
 .header__navigation-list--close {
+
   @media #{$not-desktop} {
     display: none;
 
     ~ .header__toggle {
+      inset-block-start: 5px;
+      inset-inline-start: 13px;
       transition: transform 0.2s ease;
     }
 
@@ -130,13 +135,32 @@
       width: 26px;
       height: 2px;
       background-color: #ffffff;
-      box-shadow: 0 18px 0 0 #ffffff;
+      box-shadow: 0 16px 0 0 #ffffff;
       transform: rotate(0);
     }
 
     ~ .header__toggle::after {
-      width: 20px;
-      transform: translate(-3px, 9px) rotate(0);
+      width: 16px;
+      transform: translate(-5px, 8px) rotate(0);
+    }
+  }
+
+  @media #{$tablet-only} {
+  ~ .header__toggle {
+    inset-block-start: 27px;
+    inset-inline-start: 43px;
+  }
+
+  ~ .header__toggle::before {
+    inset-block-start: 5px;
+    box-shadow: 0 17px 0 0 #ffffff;
+    }
+
+    ~ .header__toggle::after {
+      width: 16px;
+      transform: rotate(0);
+      inset-block-start: 13px;
+      inset-inline-start: 2px;
     }
   }
 }
@@ -147,6 +171,7 @@
   padding: 3px 0;
 
   @media #{$desktop-only} {
+    padding: 3px;
     font-weight: var(--font-weight, 400);
     text-transform: none;
   }
@@ -154,10 +179,10 @@
 
 .header__phone {
   @include link;
-  font-weight: var(--font-weight-semibold, 600);
+  @include title-h6;
   justify-self: end;
 
   @media #{$not-mobile} {
-    font-size: 18px;
+    padding-top: 4px;
   }
 }
