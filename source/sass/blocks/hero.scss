@@ -1,0 +1,12 @@
+.hero {
+  padding-top: 100px;
+}
+
+.hero__slider {
+  @include container;
+  margin-inline: auto;
+}
+
+.hero__list {
+  @include reset-list;
+}
