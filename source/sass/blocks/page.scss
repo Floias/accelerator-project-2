@@ -20,6 +20,7 @@
 
 .page__body:not(:has(.header__navigation-list--close)) {
   @media #{$not-desktop} {
+    overflow: hidden;
     &::before {
       position: absolute;
       content: '';
