@@ -3,13 +3,16 @@
   color: var(--white-100);
 }
 
-.hero__slider {
+.hero__container {
   @include container;
+  overflow: hidden;
   margin-inline: auto;
 }
 
 .hero__list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
 }
 
 .hero__item {
@@ -22,6 +25,7 @@
   @include container;
   position: absolute;
   content: '';
+  width: 320px;
   height: 568px;
   inset-block-start: 0;
   inset-inline-start: 0;
@@ -41,6 +45,15 @@
   background-color: var(--additional-100);
   border-color: transparent;
   width: 180px;
+}
+
+.hero__pagination {
+  position: absolute;
+  text-align: center;
+}
+
+.hero__pagination * {
+  border: solid 1px var(--white-100);
 }
 
 .hero__item-mark {
