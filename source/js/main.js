@@ -3,5 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 import { changesMenuState } from './modules/menu';
+import { initHeroSlider } from './modules/hero-slider';
 
 changesMenuState();
+initHeroSlider();

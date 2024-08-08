@@ -1,7 +1,8 @@
 // Vendor
 
 @import "vendor/normalize";
-//@import "./vendor/swiper";
+@import "swiper/css";
+@import "swiper/css/pagination";
 
 // глобальные стили
 @import "./global/fonts";

@@ -1,5 +1,6 @@
 .hero {
   padding-top: 100px;
+  color: var(--white-100);
 }
 
 .hero__slider {
@@ -9,4 +10,39 @@
 
 .hero__list {
   @include reset-list;
+}
+
+.hero__item {
+  padding: 150px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.hero__image-wrapper {
+  @include container;
+  position: absolute;
+  content: '';
+  height: 568px;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: -1;
+}
+
+.hero__item-title {
+  @include title-h2;
+}
+
+.hero__item-description {
+  @include text-big;
+}
+
+.hero__item-button {
+  @include button;
+  background-color: var(--additional-100);
+  border-color: transparent;
+  width: 180px;
+}
+
+.hero__item-mark {
+  display: none;
 }

@@ -21,6 +21,7 @@
 .page__body:not(:has(.header__navigation-list--close)) {
   @media #{$not-desktop} {
     overflow: hidden;
+    margin-right: 17px;
     &::before {
       position: absolute;
       content: '';
