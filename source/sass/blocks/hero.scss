@@ -1,6 +1,49 @@
 .hero {
-  padding-top: 100px;
   color: var(--white-100);
+  background-color: var(--additional-100);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.hero:has(.hero__item--active[data-hero='caucasus']) {
+  background-image: url('../../img/background-images/hero-caucasus-mobile@1x.jpg');
+
+  @media #{$mobile-tablet} {
+    background-image: url('../../img/background-images/hero-caucasus-tablet@1x.jpg');
+  }
+
+  @media #{$tablet-desktop} {
+    background-image: url('../../img/background-images/hero-caucasus-desktop@1x.jpg');
+  }
+}
+
+.hero:has(.hero__item--active[data-hero='kamchatka']) {
+  background-image: url('../../img/background-images/hero-kamchatka-mobile@1x.jpg');
+
+  @media #{$mobile-tablet} {
+    background-image: url('../../img/background-images/hero-kamchatka-tablet@1x.jpg');
+  }
+
+  @media #{$tablet-desktop} {
+    background-image: url('../../img/background-images/hero-kamchatka-desktop@1x.jpg');
+  }
+}
+
+.hero:has(.hero__item--active[data-hero='altai']) {
+  background-image: url('../../img/background-images/hero-altai-mobile@1x.jpg');
+
+  @media #{$mobile-tablet} {
+    background-image: url('../../img/background-images/hero-altai-tablet@1x.jpg');
+  }
+
+  @media #{$tablet-desktop} {
+    background-image: url('../../img/background-images/hero-altai-desktop@1x.jpg');
+  }
+}
+
+.hero__slider {
+  position: relative;
 }
 
 .hero__container {
@@ -12,32 +55,74 @@
 .hero__list {
   @include reset-list;
   display: grid;
-  grid-template-columns: repeat(3, 320px);
+  grid-template-columns: repeat(3, $breakpoint-mobile);
+
+  @media #{$not-mobile} {
+    grid-template-columns: repeat(3, $breakpoint-tablet);
+  }
+
+  @media #{$desktop-only} {
+    grid-template-columns: repeat(3, $breakpoint-desktop);
+  }
 }
 
 .hero__item {
-  padding: 150px 20px;
+  padding: 118px 20px 113px;
   position: relative;
   text-align: center;
+
+  @media #{$not-mobile} {
+    padding: 286px 45px 402px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 124px 120px 56px;
+    text-align: left;
+  }
 }
 
-.hero__image-wrapper {
-  @include container;
-  position: absolute;
-  content: '';
-  width: 320px;
-  height: 568px;
-  inset-block-start: 0;
-  inset-inline-start: 0;
-  z-index: -1;
-}
-
-.hero__item-title {
+.hero__item h3 {
   @include title-h2;
+  margin-bottom: 10px;
+
+  @media #{$not-mobile} {
+    @include title-h1;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 23px;
+  }
 }
 
-.hero__item-description {
+.hero__item p {
   @include text-big;
+  margin-bottom: 60px;
+
+  @media #{$not-mobile} {
+    margin: 14px 0 36px;
+    padding-inline: 102px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 0;
+    max-width: 420px;
+  }
+}
+
+.hero__item:has(.hero__image-wrapper) {
+  @media #{$not-mobile} {
+    padding: 83px 45px 50px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 124px 120px 50px;
+  }
+}
+
+.hero__item:has(.hero__image-wrapper) p {
+  @media #{$desktop-only} {
+    max-width: 460px;
+  }
 }
 
 .hero__item-button {
@@ -45,17 +130,85 @@
   background-color: var(--additional-100);
   border-color: transparent;
   width: 180px;
+  cursor: pointer;
+
+  @media #{$desktop-only} {
+    margin-bottom: 134px;
+  }
 }
 
 .hero__pagination {
   position: absolute;
   text-align: center;
+
+  @media #{$not-mobile} {
+    --swiper-pagination-bullet-size: 20px;
+  }
+
+  @media #{$desktop-only} {
+    padding-inline: 110px;
+    text-align: right;
+    --swiper-pagination-bottom: 90px;
+  }
 }
 
-.hero__pagination * {
+.hero__pagination span {
   border: solid 1px var(--white-100);
 }
 
 .hero__item-mark {
   display: none;
+
+  @media #{$desktop-only} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.hero__item-mark div {
+  @include text-xs;
+  padding: 13px 19px;
+  border: solid 1px var(--white-50);
+  display: flex;
+  gap: 8px;
+
+  &::before {
+    padding: 2px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hero__duration {
+  &::before {
+    background: url('/__spritemap#sprite-duration-view');
+  }
+}
+
+.hero__complexity {
+  &::before {
+    background: url('/__spritemap#sprite-complexity-view');
+  }
+}
+
+.hero__image-wrapper {
+  display: none;
+
+  @media #{$not-mobile} {
+    display: block;
+    margin-block: 44px;
+    width: 442px;
+    height: 365px;
+  }
+
+  @media #{$desktop-only} {
+    position: absolute;
+    top: 143px;
+    right: 120px;
+    width: 410px;
+    height: 459px;
+  }
 }

@@ -182,14 +182,14 @@
 }
 
 @mixin button {
-  padding: 20px;
+  padding: 19px;
   color: inherit;
   font-family: var(--font-family, inherit);
   font-weight: var(--font-weight, 400);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
 
-  @media #{$desktop-only} {
-    font-size: 16px;
+  @media #{$not-mobile} {
+    padding: 18px;
   }
 }

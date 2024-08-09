@@ -10,7 +10,7 @@
   @include container;
   position: relative;
   margin-inline: auto;
-  padding: 15px;
+  padding: 15px 15px 13px;
   display: grid;
 
   @media #{$not-mobile} {

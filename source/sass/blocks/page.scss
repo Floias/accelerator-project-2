@@ -32,5 +32,14 @@
 }
 
 .page__body main {
+  padding-top: 100px;
   flex-grow: 1;
+
+  @media #{$not-mobile} {
+    padding-top: 82px;
+  }
+
+  @media #{$desktop-only} {
+    padding-top: 126px;
+  }
 }

@@ -50,61 +50,39 @@
         <div class="hero__slider">
           <div class="hero__container">
             <ul class="hero__list">
-              <li class="hero__item">
-                <h3 class="hero__item-title">Захватывающие вершины Кавказа</h3>
-                <div class="hero__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/hero-caucasus-desktop@1x.webp 1x, ./img/content-images/hero-caucasus-desktop@2x.webp 2x" width="1440" height="800">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/hero-caucasus-tablet@1x.webp 1x, ./img/content-images/hero-caucasus-tablet@2x.webp 2x" width="768" height="1034">
-                    <source type="image/webp" srcset="./img/content-images/hero-caucasus-mobile@1x.webp 1x, ./img/content-images/hero-caucasus-mobile@2x.webp 2x" width="320" height="568">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/hero-caucasus-desktop@1x.jpg 1x, ./img/content-images/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/hero-caucasus-tablet@1x.jpg 1x, ./img/content-images/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1034">
-                    <img src="./img/content-images/hero-caucasus-mobile@1x.jpg" srcset="./img/content-images/hero-caucasus-mobile@2x.jpg" alt="Вершины кавказа прекрасны." width="320" height="568">
-                  </picture>
-                </div>
-                <p class="hero__item-description">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+              <li class="hero__item" data-hero="caucasus">
+                <h3>Захватывающие вершины&nbsp;Кавказа</h3>
+                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
                 <button class="hero__item-button" type="button">Смотреть тур</button>
                 <div class="hero__item-mark">
-                  <span>6&nbsp;дней/5&nbsp;ночей</span>
-                  <span>Высокая сложность</span>
+                  <div class="hero__duration">6&nbsp;дней/5&nbsp;ночей</div>
+                  <div class="hero__complexity">Высокая сложность</div>
                 </div>
               </li>
-              <li class="hero__item">
-                <h3 class="hero__item-title">Невероятная природа Камчатки</h3>
+              <li class="hero__item" data-hero="kamchatka">
+                <h3>Невероятная природа&nbsp;Камчатки</h3>
+                <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                <button class="hero__item-button" type="button">Смотреть тур</button>
                 <div class="hero__image-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/hero-kamchatka-desktop@1x.webp 1x, ./img/content-images/hero-kamchatka-desktop@2x.webp 2x" width="1440" height="800">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/hero-kamchatka-tablet@1x.webp 1x, ./img/content-images/hero-kamchatka-tablet@2x.webp 2x" width="768" height="1034">
-                    <source type="image/webp" srcset="./img/content-images/hero-kamchatka-mobile@1x.webp 1x, ./img/content-images/hero-kamchatka-mobile@2x.webp 2x" width="320" height="568">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/hero-kamchatka-desktop@1x.jpg 1x, ./img/content-images/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/hero-kamchatka-tablet@1x.jpg 1x, ./img/content-images/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1034">
-                    <img src="./img/content-images/hero-kamchatka-mobile@1x.jpg" srcset="./img/content-images/hero-kamchatka-mobile@2x.jpg" alt="Пейзажи невероятной Камчатки." width="320" height="568">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/photo-kamchatka-desktop@1x.webp 1x, ./img/content-images/photo-kamchatka-desktop@2x.webp 2x" width="410" height="459">
+                    <source type="image/webp" srcset="./img/content-images/photo-kamchatka-tablet@1x.webp 1x, ./img/content-images/photo-kamchatka-tablet@2x.webp 2x" width="442" height="365">
+                    <source type="image/png" media="(min-width: 1440px)" srcset="./img/content-images/photo-kamchatka-desktop@1x.png 1x, ./img/content-images/photo-kamchatka-desktop@2x.png 2x" width="410" height="459">
+                    <img src="./img/content-images/photo-kamchatka-tablet@1x.png" srcset="./img/content-images/photo-kamchatka-tablet@2x.png" alt="Фото Камчатки." width="442" height="365">
                   </picture>
                 </div>
-                <p class="hero__item-description">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                <button class="hero__item-button" type="button">Смотреть тур</button>
                 <div class="hero__item-mark">
-                  <span>9&nbsp;дней/10&nbsp;ночей</span>
-                  <span>Средняя сложность</span>
+                  <div class="hero__duration">9&nbsp;дней/10&nbsp;ночей</div>
+                  <div class="hero__complexity">Средняя сложность</div>
                 </div>
               </li>
-              <li class="hero__item">
-                <h3 class="hero__item-title">Магические пейзажи Алтайского Края</h3>
-                <div class="hero__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/hero-altai-desktop@1x.webp 1x, ./img/content-images/hero-altai-desktop@2x.webp 2x" width="1440" height="800">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/hero-altai-tablet@1x.webp 1x, ./img/content-images/hero-altai-tablet@2x.webp 2x" width="768" height="1034">
-                    <source type="image/webp" srcset="./img/content-images/hero-altai-mobile@1x.webp 1x, ./img/content-images/hero-altai-mobile@2x.webp 2x" width="320" height="568">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/hero-altai-desktop@1x.jpg 1x, ./img/content-images/hero-altai-desktop@2x.jpg 2x" width="1440" height="800">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/hero-altai-tablet@1x.jpg 1x, ./img/content-images/hero-altai-tablet@2x.jpg 2x" width="768" height="1034">
-                    <img src="./img/content-images/hero-mobile@1x.jpg" srcset="./img/content-images/hero-altai-mobile@2x.jpg" alt="Посмотрите какая красота в Алтайском Крае." width="320" height="568">
-                  </picture>
-                </div>
-                <p class="hero__item-description">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+              <li class="hero__item" data-hero="altai">
+                <h3>Магические пейзажи Алтайского&nbsp;Края</h3>
+                <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                 <button class="hero__item-button" type="button">Смотреть тур</button>
                 <div class="hero__item-mark">
-                  <span>8&nbsp;дней/7&nbsp;ночей</span>
-                  <span>Лёгкая сложность</span>
+                  <div class="hero__duration">8&nbsp;дней/7&nbsp;ночей</div>
+                  <div class="hero__complexity">Лёгкая сложность</div>
                 </div>
               </li>
             </ul>

@@ -7,3 +7,5 @@ $tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-
 $desktop-only: "(min-width: #{$breakpoint-desktop})";
 $not-mobile: "(min-width: #{$breakpoint-tablet})";
 $not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$mobile-tablet: "(min-width: #{$breakpoint-mobile + $breakpoint-gap})";
+$tablet-desktop: "(min-width: #{$breakpoint-tablet + $breakpoint-gap})";
