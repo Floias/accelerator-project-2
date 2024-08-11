@@ -9,36 +9,73 @@
 .hero:has(.hero__item--active[data-hero='caucasus']) {
   background-image: url('../../img/background-images/hero-caucasus-mobile@1x.jpg');
 
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/background-images/hero-caucasus-mobile@2x.jpg');
+  }
+
   @media #{$mobile-tablet} {
     background-image: url('../../img/background-images/hero-caucasus-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-caucasus-tablet@2x.jpg');
+    }
   }
 
   @media #{$tablet-desktop} {
     background-image: url('../../img/background-images/hero-caucasus-desktop@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-caucasus-desktop@2x.jpg');
+    }
   }
 }
 
 .hero:has(.hero__item--active[data-hero='kamchatka']) {
   background-image: url('../../img/background-images/hero-kamchatka-mobile@1x.jpg');
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/background-images/hero-kamchatka-mobile@2x.jpg');
+  }
+
   @media #{$mobile-tablet} {
     background-image: url('../../img/background-images/hero-kamchatka-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-kamchatka-tablet@2x.jpg');
+    }
   }
 
   @media #{$tablet-desktop} {
     background-image: url('../../img/background-images/hero-kamchatka-desktop@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-kamchatka-desktop@2x.jpg');
+    }
   }
 }
 
 .hero:has(.hero__item--active[data-hero='altai']) {
   background-image: url('../../img/background-images/hero-altai-mobile@1x.jpg');
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/background-images/hero-altai-mobile@2x.jpg');
+  }
+
   @media #{$mobile-tablet} {
     background-image: url('../../img/background-images/hero-altai-tablet@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-altai-tablet@2x.jpg');
+    }
   }
 
   @media #{$tablet-desktop} {
     background-image: url('../../img/background-images/hero-altai-desktop@1x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-images/hero-altai-desktop@2x.jpg');
+    }
   }
 }
 
@@ -184,7 +221,7 @@
 
 .hero__duration {
   &::before {
-    background: url('/__spritemap#sprite-duration-view');
+    background: url('/__spritemap#sprite-duration-moon-view');
   }
 }
 
