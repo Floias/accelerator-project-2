@@ -53,7 +53,7 @@
               <li class="hero__item" data-hero="caucasus">
                 <h3>Захватывающие вершины&nbsp;Кавказа</h3>
                 <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                <button class="hero__item-button" type="button">Смотреть тур</button>
+                <a class="hero__item-button" href="#">Смотреть тур</a>
                 <div class="hero__item-mark">
                   <div class="hero__duration">6&nbsp;дней/5&nbsp;ночей</div>
                   <div class="hero__complexity">Высокая сложность</div>
@@ -62,7 +62,7 @@
               <li class="hero__item" data-hero="kamchatka">
                 <h3>Невероятная природа&nbsp;Камчатки</h3>
                 <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                <button class="hero__item-button" type="button">Смотреть тур</button>
+                <a class="hero__item-button" href="#">Смотреть тур</a>
                 <div class="hero__image-wrapper">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/photo-kamchatka-desktop@1x.webp 1x, ./img/content-images/photo-kamchatka-desktop@2x.webp 2x" width="410" height="459">
@@ -79,7 +79,7 @@
               <li class="hero__item" data-hero="altai">
                 <h3>Магические пейзажи Алтайского&nbsp;Края</h3>
                 <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                <button class="hero__item-button" type="button">Смотреть тур</button>
+                <a class="hero__item-button" href="#">Смотреть тур</a>
                 <div class="hero__item-mark">
                   <div class="hero__duration">8&nbsp;дней/7&nbsp;ночей</div>
                   <div class="hero__complexity">Лёгкая сложность</div>
@@ -91,39 +91,43 @@
         </div>
       </section>
       <section class="tours" data-test="tours">
-        <h2 class="tours__title">Ближайшие туры</h2>
         <div class="tours__slider">
           <div class="tours__container">
-            <div class="slider-control">
-              <button class="tours__button tours__button--prev" type="button">
-                <span class="visually-hidden">Предыдущий тур.</span>
-              </button>
-              <button class="tours__button tours__button--next" type="button">
-                <span class="visually-hidden">Следующий тур.</span>
-              </button>
+            <div class="tours__title-wrapper">
+              <h2 class="tours__title" data-title="Ближайшие туры">Ближайшие туры</h2>
+              <div class="tours__slider-control">
+                <button class="tours__button tours__button--prev" type="button">
+                  <span class="visually-hidden">Предыдущий тур.</span>
+                </button>
+                <button class="tours__button tours__button--next" type="button">
+                  <span class="visually-hidden">Следующий тур.</span>
+                </button>
+              </div>
             </div>
             <ul class="tours__list">
               <li class="tours__item">
-                <ul class="tours__info-list">
-                  <li class="tours__info-item tiurs__info-item--place">Кавказ</li>
-                  <li class="tours__info-item tiurs__info-item--days">4&nbsp;дня</li>
-                  <li class="tours__info-item tiurs__info-item--nigts">3&nbsp;ночи</li>
-                </ul>
-                <h3 class="tours__info-title">Путешествие вокруг Эльбруса</h3>
-                <dl class="tours__details">
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Сложность:</dt>
-                    <dd class="tours__detail-meaning">4 звезды</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Даты набора:</dt>
-                    <dd class="tours__detail-meaning">12.06–19.06</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Группа:</dt>
-                    <dd class="tours__detail-meaning">до&nbsp;15&nbsp;чел.</dd>
-                  </div>
-                </dl>
+                <div class="tours__content">
+                  <ul class="tours__info-list">
+                    <li class="tours__info-item tours__info-item--place">Кавказ</li>
+                    <li class="tours__info-item tours__info-item--days">4&nbsp;дня</li>
+                    <li class="tours__info-item tours__info-item--night">3&nbsp;ночи</li>
+                  </ul>
+                  <h3 class="tours__info-title">Путешествие вокруг Эльбруса</h3>
+                  <dl class="tours__details">
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Сложность:</dt>
+                      <dd class="tours__detail-meaning">4 звезды</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Даты набора:</dt>
+                      <dd class="tours__detail-meaning">12.06–19.06</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Группа:</dt>
+                      <dd class="tours__detail-meaning">до&nbsp;15&nbsp;чел.</dd>
+                    </div>
+                  </dl>
+                </div>
                 <div class="tours__img">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-caucasus-desktop@1x.webp 1x, ./img/content-images/tour-caucasus-desktop@2x.webp 2x" width="380" height="416">
@@ -136,26 +140,28 @@
                 </div>
               </li>
               <li class="tours__item">
-                <ul class="tours__info-list">
-                  <li class="tours__info-item tiurs__info-item--place">Алтай</li>
-                  <li class="tours__info-item tiurs__info-item--days">14&nbsp;дней</li>
-                  <li class="tours__info-item tiurs__info-item--nigts">13&nbsp;ночей</li>
-                </ul>
-                <h3 class="tours__info-title">Путь к&nbsp;подножию Белухи</h3>
-                <dl class="tours__details">
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Сложность:</dt>
-                    <dd class="tours__detail-meaning">3 звезды</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Даты набора:</dt>
-                    <dd class="tours__detail-meaning">14.06–23.06</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Группа:</dt>
-                    <dd class="tours__detail-meaning">до&nbsp;25&nbsp;чел.</dd>
-                  </div>
-                </dl>
+                <div class="tours__content">
+                  <ul class="tours__info-list">
+                    <li class="tours__info-item tours__info-item--place">Алтай</li>
+                    <li class="tours__info-item tours__info-item--days">14&nbsp;дней</li>
+                    <li class="tours__info-item tours__info-item--night">13&nbsp;ночей</li>
+                  </ul>
+                  <h3 class="tours__info-title">Путь к&nbsp;подножию Белухи</h3>
+                  <dl class="tours__details">
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Сложность:</dt>
+                      <dd class="tours__detail-meaning">3 звезды</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Даты набора:</dt>
+                      <dd class="tours__detail-meaning">14.06–23.06</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Группа:</dt>
+                      <dd class="tours__detail-meaning">до&nbsp;25&nbsp;чел.</dd>
+                    </div>
+                  </dl>
+                </div>
                 <div class="tours__img">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-altai-desktop@1x.webp 1x, ./img/content-images/tour-altai-desktop@2x.webp 2x" width="380" height="416">
@@ -168,26 +174,28 @@
                 </div>
               </li>
               <li class="tours__item">
-                <ul class="tours__info-list">
-                  <li class="tours__info-item tiurs__info-item--place">Адыгея</li>
-                  <li class="tours__info-item tiurs__info-item--days">7&nbsp;дней</li>
-                  <li class="tours__info-item tiurs__info-item--nigts">6&nbsp;ночей</li>
-                </ul>
-                <h3 class="tours__info-title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
-                <dl class="tours__details">
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Сложность:</dt>
-                    <dd class="tours__detail-meaning">4 звезды</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Даты набора:</dt>
-                    <dd class="tours__detail-meaning">15.07–19.07</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Группа:</dt>
-                    <dd class="tours__detail-meaning">до&nbsp;22&nbsp;чел.</dd>
-                  </div>
-                </dl>
+                <div class="tours__content">
+                  <ul class="tours__info-list">
+                    <li class="tours__info-item tours__info-item--place">Адыгея</li>
+                    <li class="tours__info-item tours__info-item--days">7&nbsp;дней</li>
+                    <li class="tours__info-item tours__info-item--night">6&nbsp;ночей</li>
+                  </ul>
+                  <h3 class="tours__info-title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                  <dl class="tours__details">
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Сложность:</dt>
+                      <dd class="tours__detail-meaning">4 звезды</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Даты набора:</dt>
+                      <dd class="tours__detail-meaning">15.07–19.07</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Группа:</dt>
+                      <dd class="tours__detail-meaning">до&nbsp;22&nbsp;чел.</dd>
+                    </div>
+                  </dl>
+                </div>
                 <div class="tours__img">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.webp 1x, ./img/content-images/tour-adygeya-desktop@2x.webp 2x" width="380" height="416">
@@ -195,31 +203,33 @@
                     <source type="image/webp" srcset="./img/content-images/tour-adygeya-mobile@1x.webp 1x, ./img/content-images/tour-adygeya-mobile@2x.webp 2x" width="290" height="416">
                     <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.jpg 1x, ./img/content-images/tour-adygeya-desktop@2x.jpg 2x" width="380" height="416">
                     <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-adygeya-tablet@1x.jpg 1x, ./img/content-images/tour-adygeya-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-adygeya-mobile@1x.jpg" srcset="./img/content-images/tour-adygeya-mobile@2x.jpg" alt="Вершины кавказа прекрасны." width="290" height="416">
+                    <img src="./img/content-images/tour-adygeya-mobile@1x.jpg" srcset="./img/content-images/tour-adygeya-mobile@2x.jpg" alt="Адыгея великолепна." width="290" height="416">
                   </picture>
                 </div>
               </li>
               <li class="tours__item">
-                <ul class="tours__info-list">
-                  <li class="tours__info-item tiurs__info-item--place">Урал</li>
-                  <li class="tours__info-item tiurs__info-item--days">9&nbsp;дней</li>
-                  <li class="tours__info-item tiurs__info-item--nigts">10&nbsp;ночей</li>
-                </ul>
-                <h3 class="tours__info-title">Восхождение Манарага</h3>
-                <dl class="tours__details">
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Сложность:</dt>
-                    <dd class="tours__detail-meaning">5 звезд</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Даты набора:</dt>
-                    <dd class="tours__detail-meaning">12.07–19.07</dd>
-                  </div>
-                  <div class="tours__detail">
-                    <dt class="tours__detail-title">Группа:</dt>
-                    <dd class="tours__detail-meaning">до&nbsp;7&nbsp;чел.</dd>
-                  </div>
-                </dl>
+                <div class="tours__content">
+                  <ul class="tours__info-list">
+                    <li class="tours__info-item tours__info-item--place">Урал</li>
+                    <li class="tours__info-item tours__info-item--days">9&nbsp;дней</li>
+                    <li class="tours__info-item tours__info-item--night">10&nbsp;ночей</li>
+                  </ul>
+                  <h3 class="tours__info-title">Восхождение Манарага</h3>
+                  <dl class="tours__details">
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Сложность:</dt>
+                      <dd class="tours__detail-meaning">5 звезд</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Даты набора:</dt>
+                      <dd class="tours__detail-meaning">12.07–19.07</dd>
+                    </div>
+                    <div class="tours__detail">
+                      <dt class="tours__detail-title">Группа:</dt>
+                      <dd class="tours__detail-meaning">до&nbsp;7&nbsp;чел.</dd>
+                    </div>
+                  </dl>
+                </div>
                 <div class="tours__img">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.webp 1x, ./img/content-images/tour-ural-desktop@2x.webp 2x" width="380" height="416">
@@ -227,7 +237,7 @@
                     <source type="image/webp" srcset="./img/content-images/tour-ural-mobile@1x.webp 1x, ./img/content-images/tour-ural-mobile@2x.webp 2x" width="290" height="416">
                     <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.jpg 1x, ./img/content-images/tour-ural-desktop@2x.jpg 2x" width="380" height="416">
                     <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-ural-tablet@1x.jpg 1x, ./img/content-images/tour-ural-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-ural-mobile@1x.jpg" srcset="./img/content-images/tour-ural-mobile@2x.jpg" alt="Вершины кавказа прекрасны." width="290" height="416">
+                    <img src="./img/content-images/tour-ural-mobile@1x.jpg" srcset="./img/content-images/tour-ural-mobile@2x.jpg" alt="Красоты Урала." width="290" height="416">
                   </picture>
                 </div>
               </li>

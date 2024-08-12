@@ -13,6 +13,7 @@ const swiperOptions = {
   pagination: {
     el: '.hero__pagination',
     clickable: true,
+    bulletElement: 'button type="button"',
   },
   breakpoints: {
     1440: {
