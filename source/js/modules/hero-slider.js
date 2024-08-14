@@ -22,6 +22,16 @@ const swiperOptions = {
   },
 };
 
+const refreshesTab = (activeIndex) => {
+  const allButtons = document.querySelectorAll('.hero__item-button');
+  allButtons.forEach((button) => button.setAttribute('tabindex', -1));
+
+  const activeSlideButton = document.querySelector(`.hero__item:nth-child(${activeIndex + 1}) .hero__item-button`);
+  if (activeSlideButton) {
+    activeSlideButton.setAttribute('tabindex', 0);
+  }
+};
+
 const initHeroSlider = () => {
   const swiper = new Swiper('.hero__container', swiperOptions);
 
@@ -30,6 +40,11 @@ const initHeroSlider = () => {
   if (container) {
     swiper.init(container);
   }
+  swiper.on('slideChange', () => {
+    refreshesTab(swiper.activeIndex);
+  });
+
+  refreshesTab(swiper.activeIndex);
 };
 
 export { initHeroSlider };

@@ -6,10 +6,12 @@
 
   @media #{$not-mobile} {
     width: 678px;
+    padding-block: 35px;
   }
 
   @media #{$desktop-only} {
     width: 1200px;
+    padding-block: 100px;
   }
 }
 
@@ -24,10 +26,19 @@
     top: -18px;
     content: attr(data-title);
     opacity: 0.03;
+
+    @media #{$not-mobile} {
+      top: -16px;
+    }
   }
 
   @media #{$not-mobile} {
     padding: 0;
+    margin: 25px 0 35px;
+  }
+
+  @media #{$desktop-only} {
+    margin: 3px 0 0 0;
   }
 }
 
@@ -36,6 +47,10 @@
   grid-template-columns: 1fr auto;
   gap: 10px;
   align-items: center;
+
+  @media #{$desktop-only} {
+    padding: 20px 0 50px;
+  }
 }
 
 .tours__list {
@@ -63,7 +78,15 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 0) 100%);
-    opacity: 0.4;
+    opacity: 0.3;
+
+    @media #{$not-mobile} {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    @media #{$desktop-only} {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    }
   }
 }
 
@@ -83,20 +106,31 @@
   width: 290px;
   height: 416px;
   object-fit: cover;
+
+  @media #{$not-mobile} {
+    width: 330px;
+  }
+
+  @media #{$desktop-only} {
+    width: 380px;
+  }
 }
 
 .tours__info-list {
   @include reset-list;
   @include caption;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 90px 1fr;
   justify-content: center;
-  gap: 5px;
+
+  @media #{$not-mobile} {
+    grid-template-columns: auto 1fr;
+  }
 }
 
-.tours__info-item {
+.tours__info-item span {
   display: flex;
-  gap: 15px;
+  gap: 11px;
   place-items: center;
 
   &::before {
@@ -106,6 +140,21 @@
     height: 16px;
     background-repeat: no-repeat;
   }
+}
+
+.tours__info-item {
+  display: flex;
+  gap: 6px;
+
+  @media #{$not-mobile} {
+    gap: 9px;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+  }
 
   &--place {
     padding: 8px 15px;
@@ -113,26 +162,41 @@
     background-color: var(--additional-100);
 
     &::before {
-    width: 9px;
-    height: 12px;
-    background: url('/__spritemap#sprite-pin-icon-view');
+      width: 9px;
+      height: 12px;
+      background: url('/__spritemap#sprite-pin-icon-view');
+    }
+
+    @media #{$not-mobile} {
+      padding: 8px 14px 8px 16px;
     }
   }
+}
 
-  &--days {
-    gap: 10px;
-    padding-right: 11px;
-  }
+.tours__info-item--duration {
+  justify-content: end;
+}
 
-  &--days::before {
-    width: 20px;
-    height: 20px;
-    background: url('/__spritemap#sprite-duration-sun-view');
-  }
+.tours__info-item--duration span:first-child {
+  gap: 10px;
+  margin-right: 9px;
 
-  &--night::before {
-    background: url('/__spritemap#sprite-duration-moon-view');
+  @media #{$not-mobile} {
+    padding: 0;
+    margin-right: 7px;
+    gap: 12px;
   }
+}
+
+.tours__info-item--duration span:first-child:before {
+  width: 20px;
+  height: 20px;
+  background: url('/__spritemap#sprite-duration-sun-view');
+}
+
+.tours__info-item--duration span:last-child:before {
+  background: url('/__spritemap#sprite-duration-moon-view');
+  margin-right: 4px;
 }
 
 .tours__info-title {
@@ -150,6 +214,14 @@
     background-color: var(--white-100);
     opacity: 0.2;
   }
+
+  @media #{$not-mobile} {
+    margin: 16px 0 15px;
+  }
+
+  @media #{$desktop-only} {
+    padding-right: 35px;
+  }
 }
 
 .tours__details {
@@ -158,6 +230,15 @@
   flex-wrap: wrap;
   gap: 8px;
   align-items: flex-end;
+
+  @media #{$not-mobile} {
+    gap: 27px;
+    justify-content: space-around;
+  }
+
+  @media #{$desktop-only} {
+    gap: 52px;
+  }
 }
 
 .tours__detail-meaning:has(svg) {
@@ -185,6 +266,7 @@
   @media #{$not-mobile} {
     display: grid;
     opacity: 1;
+    gap: 4px;
   }
 }
 
@@ -195,30 +277,32 @@
   border-color: transparent;
   width: 37px;
   height: 35px;
-  pointer-events: none;
+  cursor: pointer;
 
   &::before {
     content: '';
-    width: 14px;
+    width: 13px;
     height: 1px;
     background-color: var(--white-100);
-    transform: translateX(-2px);
   }
 
   &::after {
     position: absolute;
     content: '';
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     border: solid 1px var(--white-100);
     border-top: transparent;
     border-left: transparent;
-    transform: rotate(-45deg);
+    transform: translateX(2px) rotate(-45deg);
   }
 
-  @media #{$not-mobile} {
-    cursor: pointer;
-    pointer-events: auto;
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &:disabled {
+    background-color: #999999;
   }
 }
 
@@ -240,5 +324,13 @@
     border-left: transparent;
     transform: rotate(-45deg);
     flex-shrink: 0;
+  }
+
+  @media #{$not-mobile} {
+    padding: 37px;
+  }
+
+  @media #{$desktop-only} {
+    padding-block: 65px;
   }
 }

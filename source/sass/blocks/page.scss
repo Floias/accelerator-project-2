@@ -40,9 +40,12 @@
 
   @media #{$not-mobile} {
     padding-top: 82px;
+    background-image: url('../../img/background-images/tours-background-tablet@1x.png');
+    background-position: right -177px top 1025px;
   }
 
   @media #{$desktop-only} {
     padding-top: 126px;
+    background-position: right 0 top 800px;
   }
 }
