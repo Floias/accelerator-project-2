@@ -175,6 +175,28 @@
     margin-inline: 0;
     text-align: center;
   }
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--white-100);
+    color: var(--active);
+  }
+
+  &:hover {
+    outline: solid 1px var(--active);
+    color: var(--active);
+    background-color: var(--white-100);
+  }
+
+  &:active {
+    background-color: var(--active);
+    color: var(--white-100);
+  }
+
+  &:not([href]) {
+    background-color: var(--disabled);
+    pointer-events: none;
+  }
 }
 
 .hero__pagination {
@@ -194,6 +216,25 @@
 
 .hero__pagination button {
   border: solid 1px var(--white-100);
+
+  &:focus-visible {
+    outline: solid 1px var(--white-50);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:active {
+    background-color: var(--white-50);
+  }
+
+  &:disabled {
+    background-color: var(--disabled);
+    border-color: var(--disabled);
+    pointer-events: none;
+  }
 }
 
 .hero__item-mark {

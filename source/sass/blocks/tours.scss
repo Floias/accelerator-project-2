@@ -333,4 +333,38 @@
   @media #{$desktop-only} {
     padding-block: 65px;
   }
+
+  &:focus-visible {
+    outline: none;
+    color: var(--additional-100);
+
+    &::after {
+      border-color: var(--additional-100);
+    }
+  }
+
+  &:hover {
+    color: var(--additional-20);
+
+    &::after {
+      border-color: var(--additional-20);
+    }
+  }
+
+  &:active {
+    color: var(--active);
+
+    &::after {
+      border-color: var(--active);
+    }
+  }
+
+  &:not([href]) {
+    color: var(--disabled);
+    pointer-events: none;
+
+    &::after {
+      border-color: var(--disabled);
+    }
+  }
 }
