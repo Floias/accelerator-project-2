@@ -84,9 +84,12 @@
 }
 
 .hero__container {
-  @include container;
   overflow: hidden;
   margin-inline: auto;
+
+  @media #{$desktop-only} {
+    max-width: $breakpoint-desktop;
+  }
 }
 
 .hero__list {
@@ -115,6 +118,7 @@
   @media #{$desktop-only} {
     padding: 124px 120px 56px;
     text-align: left;
+    max-width: $breakpoint-desktop;
   }
 }
 

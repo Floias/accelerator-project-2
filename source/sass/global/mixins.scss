@@ -188,3 +188,17 @@
     padding: 20px;
   }
 }
+
+@mixin title-shadow {
+  &::before {
+    @include title-h2;
+    position: absolute;
+    top: -18px;
+    content: attr(data-title);
+    opacity: 0.03;
+
+    @media #{$not-mobile} {
+      top: -16px;
+    }
+  }
+}

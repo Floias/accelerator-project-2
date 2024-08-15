@@ -92,186 +92,266 @@
       </section>
       <section class="tours" data-test="tours">
         <div class="tours__slider">
-          <div class="tours__container">
-            <div class="tours__title-wrapper">
-              <h2 class="tours__title" data-title="Ближайшие туры">Ближайшие туры</h2>
-              <div class="tours__slider-control">
-                <button class="tours__button tours__button--prev" type="button">
-                  <span class="visually-hidden">Предыдущий тур.</span>
+          <div class="tours__title-wrapper">
+            <h2 class="tours__title" data-title="Ближайшие туры">Ближайшие туры</h2>
+            <div class="tours__slider-control">
+              <button class="tours__button tours__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий тур.</span>
+              </button>
+              <button class="tours__button tours__button--next" type="button">
+                <span class="visually-hidden">Следующий тур.</span>
+              </button>
+            </div>
+          </div>
+          <ul class="tours__list">
+            <li class="tours__item">
+              <div class="tours__content">
+                <ul class="tours__info-list">
+                  <li class="tours__info-item tours__info-item--place">Кавказ</li>
+                  <li class="tours__info-item tours__info-item--duration">
+                    <span>4&nbsp;дня</span>
+                    <span>3&nbsp;ночи</span>
+                  </li>
+                </ul>
+                <h3 class="tours__info-title">Путешествие вокруг&nbsp;Эльбруса</h3>
+                <dl class="tours__details">
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Сложность:</dt>
+                    <dd class="tours__detail-meaning">
+                      <svg width="84" height="16">
+                        <use href="/__spritemap#sprite-stars-4"></use>
+                      </svg>
+                      <span class="visually-hidden">4 звезды</span>
+                    </dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Даты набора:</dt>
+                    <dd class="tours__detail-meaning">12.06&ndash;19.06</dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Группа:</dt>
+                    <dd class="tours__detail-meaning">до&nbsp;15&nbsp;чел.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="tours__img">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-caucasus-desktop@1x.webp 1x, ./img/content-images/tour-caucasus-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-caucasus-tablet@1x.webp 1x, ./img/content-images/tour-caucasus-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/content-images/tour-caucasus-mobile@1x.webp 1x, ./img/content-images/tour-caucasus-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-caucasus-desktop@1x.jpg 1x, ./img/content-images/tour-caucasus-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-caucasus-tablet@1x.jpg 1x, ./img/content-images/tour-caucasus-tablet@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/content-images/tour-caucasus-mobile@1x.jpg" srcset="./img/content-images/tour-caucasus-mobile@2x.jpg" alt="Вершины кавказа прекрасны." width="290" height="416">
+                </picture>
+              </div>
+            </li>
+            <li class="tours__item">
+              <div class="tours__content">
+                <ul class="tours__info-list">
+                  <li class="tours__info-item tours__info-item--place">Алтай</li>
+                  <li class="tours__info-item tours__info-item--duration">
+                    <span>14&nbsp;дней</span>
+                    <span>13&nbsp;ночей</span>
+                  </li>
+                </ul>
+                <h3 class="tours__info-title">Путь к&nbsp;подножию Белухи</h3>
+                <dl class="tours__details">
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Сложность:</dt>
+                    <dd class="tours__detail-meaning">
+                      <svg width="84" height="16">
+                        <use href="/__spritemap#sprite-stars-3"></use>
+                      </svg>
+                      <span class="visually-hidden">3 звезды</span>
+                    </dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Даты набора:</dt>
+                    <dd class="tours__detail-meaning">14.06–23.06</dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Группа:</dt>
+                    <dd class="tours__detail-meaning">до&nbsp;25&nbsp;чел.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="tours__img">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-altai-desktop@1x.webp 1x, ./img/content-images/tour-altai-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-altai-tablet@1x.webp 1x, ./img/content-images/tour-altai-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/content-images/tour-altai-mobile@1x.webp 1x, ./img/content-images/tour-altai-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-altai-desktop@1x.jpg 1x, ./img/content-images/tour-altai-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-altai-tablet@1x.jpg 1x, ./img/content-images/tour-altai-tablet@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/content-images/tour-altai-mobile@1x.jpg" srcset="./img/content-images/tour-altai-mobile@2x.jpg" alt="Вид на Белуху от подножия, просто заглядение." width="290" height="416">
+                </picture>
+              </div>
+            </li>
+            <li class="tours__item">
+              <div class="tours__content">
+                <ul class="tours__info-list">
+                  <li class="tours__info-item tours__info-item--place">Адыгея</li>
+                  <li class="tours__info-item tours__info-item--duration">
+                    <span>7&nbsp;дней</span>
+                    <span>6&nbsp;ночей</span>
+                  </li>
+                </ul>
+                <h3 class="tours__info-title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                <dl class="tours__details">
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Сложность:</dt>
+                    <dd class="tours__detail-meaning">
+                      <svg width="84" height="16">
+                        <use href="/__spritemap#sprite-stars-4"></use>
+                      </svg>
+                      <span class="visually-hidden">4 звезды</span>
+                    </dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Даты набора:</dt>
+                    <dd class="tours__detail-meaning">15.07–19.07</dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Группа:</dt>
+                    <dd class="tours__detail-meaning">до&nbsp;22&nbsp;чел.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="tours__img">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.webp 1x, ./img/content-images/tour-adygeya-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-adygeya-tablet@1x.webp 1x, ./img/content-images/tour-adygeya-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/content-images/tour-adygeya-mobile@1x.webp 1x, ./img/content-images/tour-adygeya-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.jpg 1x, ./img/content-images/tour-adygeya-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-adygeya-tablet@1x.jpg 1x, ./img/content-images/tour-adygeya-tablet@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/content-images/tour-adygeya-mobile@1x.jpg" srcset="./img/content-images/tour-adygeya-mobile@2x.jpg" alt="Адыгея великолепна." width="290" height="416">
+                </picture>
+              </div>
+            </li>
+            <li class="tours__item">
+              <div class="tours__content">
+                <ul class="tours__info-list">
+                  <li class="tours__info-item tours__info-item--place">Урал</li>
+                  <li class="tours__info-item tours__info-item--duration">
+                    <span>9&nbsp;днейй</span>
+                    <span>10&nbsp;ночей</span>
+                  </li>
+
+                </ul>
+                <h3 class="tours__info-title">Восхождение Манарага</h3>
+                <dl class="tours__details">
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Сложность:</dt>
+                    <dd class="tours__detail-meaning">
+                      <svg width="84" height="16">
+                        <use href="/__spritemap#sprite-stars-5"></use>
+                      </svg>
+                      <span class="visually-hidden">5 звезд</span>
+                    </dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Даты набора:</dt>
+                    <dd class="tours__detail-meaning">12.07–19.07</dd>
+                  </div>
+                  <div class="tours__detail">
+                    <dt class="tours__detail-title">Группа:</dt>
+                    <dd class="tours__detail-meaning">до&nbsp;7&nbsp;чел.</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="tours__img">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.webp 1x, ./img/content-images/tour-ural-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-ural-tablet@1x.webp 1x, ./img/content-images/tour-ural-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="./img/content-images/tour-ural-mobile@1x.webp 1x, ./img/content-images/tour-ural-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.jpg 1x, ./img/content-images/tour-ural-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-ural-tablet@1x.jpg 1x, ./img/content-images/tour-ural-tablet@2x.jpg 2x" width="330" height="416">
+                  <img src="./img/content-images/tour-ural-mobile@1x.jpg" srcset="./img/content-images/tour-ural-mobile@2x.jpg" alt="Красоты Урала." width="290" height="416">
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <a class="tours__link" href="#">Показать все туры</a>
+        </div>
+      </section>
+      <section class="training" data-test="training">
+        <div class="training__container">
+          <div class="training__wrapper">
+            <h2 class="training__title" data-title="Обучение">Обучение</h2>
+            <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+          </div>
+          <div class="training__slider">
+            <div class="training__slider-wrapper">
+              <h3 class="training__slider-title">Наши инструкторы</h3>
+              <div class="training__slider-control">
+                <button class="training__button training__button--prev" type="button">
+                  <span class="visually-hidden">Предыдущий инструктор.</span>
                 </button>
-                <button class="tours__button tours__button--next" type="button">
-                  <span class="visually-hidden">Следующий тур.</span>
+                <button class="training__button training__button--next" type="button">
+                  <span class="visually-hidden">Следующий инструктор.</span>
                 </button>
               </div>
             </div>
-            <ul class="tours__list">
-              <li class="tours__item">
-                <div class="tours__content">
-                  <ul class="tours__info-list">
-                    <li class="tours__info-item tours__info-item--place">Кавказ</li>
-                    <li class="tours__info-item tours__info-item--duration">
-                      <span>4&nbsp;дня</span>
-                      <span>3&nbsp;ночи</span>
-                    </li>
-                  </ul>
-                  <h3 class="tours__info-title">Путешествие вокруг&nbsp;Эльбруса</h3>
-                  <dl class="tours__details">
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Сложность:</dt>
-                      <dd class="tours__detail-meaning">
-                        <svg width="84" height="16">
-                          <use href="/__spritemap#sprite-stars-4"></use>
-                        </svg>
-                        <span class="visually-hidden">4 звезды</span>
-                      </dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Даты набора:</dt>
-                      <dd class="tours__detail-meaning">12.06&ndash;19.06</dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Группа:</dt>
-                      <dd class="tours__detail-meaning">до&nbsp;15&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div class="tours__img">
+            <ul class="training__list">
+              <li class="training__item">
+                <div class="training__img">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-caucasus-desktop@1x.webp 1x, ./img/content-images/tour-caucasus-desktop@2x.webp 2x" width="380" height="416">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-caucasus-tablet@1x.webp 1x, ./img/content-images/tour-caucasus-tablet@2x.webp 2x" width="330" height="416">
-                    <source type="image/webp" srcset="./img/content-images/tour-caucasus-mobile@1x.webp 1x, ./img/content-images/tour-caucasus-mobile@2x.webp 2x" width="290" height="416">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-caucasus-desktop@1x.jpg 1x, ./img/content-images/tour-caucasus-desktop@2x.jpg 2x" width="380" height="416">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-caucasus-tablet@1x.jpg 1x, ./img/content-images/tour-caucasus-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-caucasus-mobile@1x.jpg" srcset="./img/content-images/tour-caucasus-mobile@2x.jpg" alt="Вершины кавказа прекрасны." width="290" height="416">
+                    <source type="image/webp" srcset="./img/content-images/instructor-kolesnichenko-n@1x.webp 1x, ./img/content-images/instructor-kolesnichenko-n@2x.webp 2x" width="260" height="200">
+                    <img src="./img/content-images/instructor-kolesnichenko-n@1x.jpg" srcset="./img/content-images/instructor-kolesnichenko-n@2x.jpg" alt="Наш тренер Надежда Колесниченко." width="260" height="200">
                   </picture>
                 </div>
+                <h4>Надежда Колесниченко</h4>
+                <p>Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
               </li>
-              <li class="tours__item">
-                <div class="tours__content">
-                  <ul class="tours__info-list">
-                    <li class="tours__info-item tours__info-item--place">Алтай</li>
-                    <li class="tours__info-item tours__info-item--duration">
-                      <span>14&nbsp;дней</span>
-                      <span>13&nbsp;ночей</span>
-                    </li>
-                  </ul>
-                  <h3 class="tours__info-title">Путь к&nbsp;подножию Белухи</h3>
-                  <dl class="tours__details">
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Сложность:</dt>
-                      <dd class="tours__detail-meaning">
-                        <svg width="84" height="16">
-                          <use href="/__spritemap#sprite-stars-3"></use>
-                        </svg>
-                        <span class="visually-hidden">3 звезды</span>
-                      </dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Даты набора:</dt>
-                      <dd class="tours__detail-meaning">14.06–23.06</dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Группа:</dt>
-                      <dd class="tours__detail-meaning">до&nbsp;25&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div class="tours__img">
+              <li class="training__item">
+                <div class="training__img">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-altai-desktop@1x.webp 1x, ./img/content-images/tour-altai-desktop@2x.webp 2x" width="380" height="416">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-altai-tablet@1x.webp 1x, ./img/content-images/tour-altai-tablet@2x.webp 2x" width="330" height="416">
-                    <source type="image/webp" srcset="./img/content-images/tour-altai-mobile@1x.webp 1x, ./img/content-images/tour-altai-mobile@2x.webp 2x" width="290" height="416">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-altai-desktop@1x.jpg 1x, ./img/content-images/tour-altai-desktop@2x.jpg 2x" width="380" height="416">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-altai-tablet@1x.jpg 1x, ./img/content-images/tour-altai-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-altai-mobile@1x.jpg" srcset="./img/content-images/tour-altai-mobile@2x.jpg" alt="Вид на Белуху от подножия, просто заглядение." width="290" height="416">
+                    <source type="image/webp" srcset="./img/content-images/instructor-afinogenova-s@1x.webp 1x, ./img/content-images/instructor-afinogenova-s@2x.webp 2x" width="260" height="200">
+                    <img src="./img/content-images/instructor-afinogenova-s@1x.jpg" srcset="./img/content-images/instructor-afinogenova-s@2x.jpg" alt="Наш тренер Светлана Афиногенова." width="260" height="200">
                   </picture>
                 </div>
+                <h4>Светлана Афиногенова</h4>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
               </li>
-              <li class="tours__item">
-                <div class="tours__content">
-                  <ul class="tours__info-list">
-                    <li class="tours__info-item tours__info-item--place">Адыгея</li>
-                    <li class="tours__info-item tours__info-item--duration">
-                      <span>7&nbsp;дней</span>
-                      <span>6&nbsp;ночей</span>
-                    </li>
-                  </ul>
-                  <h3 class="tours__info-title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
-                  <dl class="tours__details">
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Сложность:</dt>
-                      <dd class="tours__detail-meaning">
-                        <svg width="84" height="16">
-                          <use href="/__spritemap#sprite-stars-4"></use>
-                        </svg>
-                        <span class="visually-hidden">4 звезды</span>
-                      </dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Даты набора:</dt>
-                      <dd class="tours__detail-meaning">15.07–19.07</dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Группа:</dt>
-                      <dd class="tours__detail-meaning">до&nbsp;22&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div class="tours__img">
+              <li class="training__item">
+                <div class="training__img">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.webp 1x, ./img/content-images/tour-adygeya-desktop@2x.webp 2x" width="380" height="416">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-adygeya-tablet@1x.webp 1x, ./img/content-images/tour-adygeya-tablet@2x.webp 2x" width="330" height="416">
-                    <source type="image/webp" srcset="./img/content-images/tour-adygeya-mobile@1x.webp 1x, ./img/content-images/tour-adygeya-mobile@2x.webp 2x" width="290" height="416">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-adygeya-desktop@1x.jpg 1x, ./img/content-images/tour-adygeya-desktop@2x.jpg 2x" width="380" height="416">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-adygeya-tablet@1x.jpg 1x, ./img/content-images/tour-adygeya-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-adygeya-mobile@1x.jpg" srcset="./img/content-images/tour-adygeya-mobile@2x.jpg" alt="Адыгея великолепна." width="290" height="416">
+                    <source type="image/webp" srcset="./img/content-images/instructor-prokofiev-a@1x.webp 1x, ./img/content-images/instructor-prokofiev-a@2x.webp 2x" width="260" height="200">
+                    <img src="./img/content-images/instructor-prokofiev-a@1x.jpg" srcset="./img/content-images/instructor-prokofiev-a@2x.jpg" alt="Наш тренер Александр Прокофьев." width="260" height="200">
                   </picture>
                 </div>
+                <h4>Александр Прокофьев</h4>
+                <p>Строгий и&nbsp;внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
               </li>
-              <li class="tours__item">
-                <div class="tours__content">
-                  <ul class="tours__info-list">
-                    <li class="tours__info-item tours__info-item--place">Урал</li>
-                    <li class="tours__info-item tours__info-item--duration">
-                      <span>9&nbsp;днейй</span>
-                      <span>10&nbsp;ночей</span>
-                    </li>
-
-                  </ul>
-                  <h3 class="tours__info-title">Восхождение Манарага</h3>
-                  <dl class="tours__details">
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Сложность:</dt>
-                      <dd class="tours__detail-meaning">
-                        <svg width="84" height="16">
-                          <use href="/__spritemap#sprite-stars-5"></use>
-                        </svg>
-                        <span class="visually-hidden">5 звезд</span>
-                      </dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Даты набора:</dt>
-                      <dd class="tours__detail-meaning">12.07–19.07</dd>
-                    </div>
-                    <div class="tours__detail">
-                      <dt class="tours__detail-title">Группа:</dt>
-                      <dd class="tours__detail-meaning">до&nbsp;7&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </div>
-                <div class="tours__img">
+              <li class="training__item">
+                <div class="training__img">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.webp 1x, ./img/content-images/tour-ural-desktop@2x.webp 2x" width="380" height="416">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/tour-ural-tablet@1x.webp 1x, ./img/content-images/tour-ural-tablet@2x.webp 2x" width="330" height="416">
-                    <source type="image/webp" srcset="./img/content-images/tour-ural-mobile@1x.webp 1x, ./img/content-images/tour-ural-mobile@2x.webp 2x" width="290" height="416">
-                    <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/tour-ural-desktop@1x.jpg 1x, ./img/content-images/tour-ural-desktop@2x.jpg 2x" width="380" height="416">
-                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/tour-ural-tablet@1x.jpg 1x, ./img/content-images/tour-ural-tablet@2x.jpg 2x" width="330" height="416">
-                    <img src="./img/content-images/tour-ural-mobile@1x.jpg" srcset="./img/content-images/tour-ural-mobile@2x.jpg" alt="Красоты Урала." width="290" height="416">
+                    <source type="image/webp" srcset="./img/content-images/instructor-kaygorodov-f@1x.webp 1x, ./img/content-images/instructor-kaygorodov-f@2x.webp 2x" width="260" height="200">
+                    <img src="./img/content-images/instructor-kaygorodov-f@1x.jpg" srcset="./img/content-images/instructor-kaygorodov-f@2x.jpg" alt="Наш тренер Федор Кайгородов." width="260" height="200">
                   </picture>
                 </div>
+                <h4>Федор Кайгородов</h4>
+                <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+              </li>
+              <li class="training__item">
+                <div class="training__img">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content-images/instructor-vasnetsov-d@1x.webp 1x, ./img/content-images/instructor-vasnetsov-d@2x.webp 2x" width="260" height="200">
+                    <img src="./img/content-images/instructor-vasnetsov-d@1x.jpg" srcset="./img/content-images/instructor-vasnetsov-d@2x.jpg" alt="Наш тренер Даниэль Васнецов." width="260" height="200">
+                  </picture>
+                </div>
+                <h4>Даниэль Васнецов</h4>
+                <p>Покорял самые сложные вершины. Выбирался из&nbsp;под лавин, дружит с&nbsp;медведями и&nbsp;не&nbsp;только.</p>
               </li>
             </ul>
-            <a class="tours__link" href="#">Показать все туры</a>
+          </div>
+          <div class="training__wrapper">
+            <h3 class="training__process-title">Процесс обучения</h3>
+            <ul class="training__process-list">
+              <li class="training__process-item">Изучение спортивного туристского движения</li>
+              <li class="training__process-item">Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</li>
+              <li class="training__process-item">Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</li>
+              <li class="training__process-item">Разъяснение сложности горных препятствий</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -282,7 +362,6 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
 
-    <div data-test="training">training</div>
     <div data-test="about">about</div>
     <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>

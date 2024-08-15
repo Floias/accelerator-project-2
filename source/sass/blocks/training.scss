@@ -1,0 +1,42 @@
+.training__container {
+  @include container;
+  margin-inline: auto;
+  padding-inline: 15px;
+  display: grid;
+  gap: 25px;
+}
+
+.training__title {
+  @include title-h3;
+  @include title-shadow;
+  position: relative;
+}
+
+.training__wrapper p {
+  @include text;
+}
+
+.training__slider-title {
+  @include title-h3;
+}
+
+.training__list {
+  @include reset-list;
+}
+
+.training__item h4 {
+  @include title-h7;
+}
+
+.training__item p {
+  @include text-xs;
+}
+
+.training__process-title {
+  @include title-h5;
+}
+
+.training__process-list {
+  @include text-small;
+  @include reset-list;
+}

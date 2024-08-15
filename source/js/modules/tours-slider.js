@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const container = document.querySelector('.tours__container');
+const container = document.querySelector('.tours__slider');
 const buttonPrev = container.querySelector('.tours__button--prev');
 const buttonNext = container.querySelector('.tours__button--next');
 
 const initToursSlider = () => {
-  const swiper = new Swiper('.tours__container', {
+  const swiper = new Swiper('.tours__slider', {
     modules: [Navigation],
     a11y: {
       prevSlideMessage: 'Previous slide',

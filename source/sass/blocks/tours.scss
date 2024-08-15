@@ -1,4 +1,4 @@
-.tours__container {
+.tours__slider {
   width: 290px;
   overflow: hidden;
   margin-inline: auto;
@@ -17,20 +17,9 @@
 
 .tours__title {
   @include title-h3;
+  @include title-shadow;
   margin-bottom: 39px;
   position: relative;
-
-  &::before {
-    @include title-h2;
-    position: absolute;
-    top: -18px;
-    content: attr(data-title);
-    opacity: 0.03;
-
-    @media #{$not-mobile} {
-      top: -16px;
-    }
-  }
 
   @media #{$not-mobile} {
     padding: 0;
