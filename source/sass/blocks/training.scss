@@ -1,7 +1,7 @@
 .training__container {
   @include container;
   margin-inline: auto;
-  padding-inline: 15px;
+  padding: 20px 15px;
   display: grid;
   gap: 25px;
 }
@@ -22,6 +22,69 @@
 
 .training__list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(5, 290px);
+}
+
+.training__slider {
+  width: 290px;
+  overflow: hidden;
+  margin-inline: auto;
+}
+
+.training__process-item {
+  display: flex;
+  gap: 10px;
+
+  &::before {
+    margin-right: 5px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: var(--additional-100);
+    border-radius: 50%;
+    flex-shrink: 0;
+    order: -1;
+    align-self: center;
+  }
+
+  &::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    order: -1;
+  }
+
+  &[data-process='map'] {
+    &::after {
+      background: url('/__spritemap#sprite-map-icon-view');
+    }
+  }
+
+  &[data-process='boots'] {
+    &::after {
+      background: url('/__spritemap#sprite-boots-view');
+    }
+  }
+
+  &[data-process='pine-tree'] {
+    &::after {
+      background: url('/__spritemap#sprite-pine-tree-view');
+    }
+  }
+
+  &[data-process='mountain'] {
+    &::after {
+      background: url('/__spritemap#sprite-mountain-view');
+    }
+  }
+}
+
+.training__item {
+  padding: 15px;
+  border: solid 1px var(--additional-20)
 }
 
 .training__item h4 {
@@ -39,4 +102,36 @@
 .training__process-list {
   @include text-small;
   @include reset-list;
+  display: grid;
+  gap: 25px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 14px;
+    left: 6px;
+    width: 2px;
+    height: calc(100% - 28px);
+    background-color: var(--additional-100);
+  }
+}
+
+.training__slider-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+
+  @media #{$desktop-only} {
+    padding: 20px 0 50px;
+  }
+}
+
+.training__slider-control {
+  @include slider-control;
+}
+
+.training__button {
+  @include slider-buttons;
 }

@@ -202,3 +202,53 @@
     }
   }
 }
+
+@mixin slider-control {
+  display: none;
+  grid-template-columns: repeat(2, 37px);
+  gap: 5px;
+  justify-content: end;
+  opacity: 0;
+
+  @media #{$not-mobile} {
+    display: grid;
+    opacity: 1;
+    gap: 4px;
+  }
+}
+
+@mixin slider-buttons {
+  display: grid;
+  place-items: center;
+  background-color: var(--additional-100);
+  border-color: transparent;
+  width: 37px;
+  height: 35px;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    width: 13px;
+    height: 1px;
+    background-color: var(--white-100);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: solid 1px var(--white-100);
+    border-top: transparent;
+    border-left: transparent;
+    transform: translateX(2px) rotate(-45deg);
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &:disabled {
+    background-color: #999999;
+  }
+}
