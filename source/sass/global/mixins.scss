@@ -10,6 +10,20 @@
   }
 }
 
+@mixin slider($width-m, $width-t, $width-d) {
+  width: $width-m;
+  overflow: hidden;
+  margin-inline: auto;
+
+  @media #{$not-mobile} {
+    width:  $width-t;
+  }
+
+  @media #{$desktop-only} {
+    width: $width-d;
+  }
+}
+
 @mixin reset-list {
   margin: 0;
   padding: 0;

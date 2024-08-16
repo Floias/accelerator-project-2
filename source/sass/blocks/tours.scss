@@ -1,16 +1,12 @@
 .tours__slider {
-  width: 290px;
-  overflow: hidden;
-  margin-inline: auto;
+  @include slider($slider-s-mobile, $slider-s-tablet, $slider-s-desktop);
   padding-block: 21px;
 
   @media #{$not-mobile} {
-    width: 678px;
     padding-block: 35px;
   }
 
   @media #{$desktop-only} {
-    width: 1200px;
     padding-block: 100px;
   }
 }
@@ -256,7 +252,7 @@
 .tours__link {
   @include link;
   @include button-big;
-  padding: 35px 15px;
+  padding: 35px 15px 8px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +270,7 @@
   }
 
   @media #{$not-mobile} {
-    padding: 37px;
+    padding: 37px 20px 8px;
   }
 
   @media #{$desktop-only} {

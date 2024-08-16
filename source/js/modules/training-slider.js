@@ -27,11 +27,11 @@ const initTrainingSlider = () => {
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 18,
+        spaceBetween: 20,
       },
       1440: {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 20,
         allowTouchMove: false,
       }
     },

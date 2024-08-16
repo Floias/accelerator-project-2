@@ -84,12 +84,7 @@
 }
 
 .hero__container {
-  overflow: hidden;
-  margin-inline: auto;
-
-  @media #{$desktop-only} {
-    max-width: $breakpoint-desktop;
-  }
+  @include slider($breakpoint-mobile, $breakpoint-tablet, $breakpoint-desktop);
 }
 
 .hero__list {

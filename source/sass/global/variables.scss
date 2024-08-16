@@ -9,3 +9,6 @@ $not-mobile: "(min-width: #{$breakpoint-tablet})";
 $not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
 $mobile-tablet: "(min-width: #{$breakpoint-mobile + $breakpoint-gap})";
 $tablet-desktop: "(min-width: #{$breakpoint-tablet + $breakpoint-gap})";
+$slider-s-mobile: 290px;
+$slider-s-tablet: 678px;
+$slider-s-desktop: 1200px;
