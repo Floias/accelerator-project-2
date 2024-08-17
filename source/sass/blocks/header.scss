@@ -1,13 +1,14 @@
 .header {
   position: absolute;
-  background-color: var(--additional-100);
-  color: var(--white-100);
+  background-color: var(--additional-100, #0266c1);
+  color: var(--white-100, #ffffff);
   width: 100%;
   z-index: 1;
 }
 
 .header__container {
   @include container;
+
   position: relative;
   margin-inline: auto;
   padding: 15px 15px 13px;
@@ -44,7 +45,7 @@
   }
 
   @media #{$desktop-only} {
-  grid-column: 1/2;
+    grid-column: 1/2;
   }
 }
 
@@ -109,7 +110,7 @@
   &:focus-visible::before,
   &:focus-visible::after {
     outline: none;
-    background-color: var(--primary);
+    background-color: var(--primary, #2d383f);
   }
 
   &:hover::before,
@@ -119,19 +120,20 @@
 
   &:active::before,
   &:active::after {
-    background-color: var(--active);
-    box-shadow: var(--active);
+    background-color: var(--active, #1c3374);
+    box-shadow: var(--active, #1c3374);
   }
 
   &:disabled::before,
   &:disabled::after {
-    background-color: var(--disabled);
-    box-shadow: var(--disabled);
+    background-color: var(--disabled, #999999);
+    box-shadow: var(--disabled, #999999);
   }
 }
 
 .header__navigation-list {
   @include reset-list;
+
   padding: 25px 0;
   display: grid;
   gap: 16px;
@@ -151,7 +153,6 @@
 }
 
 .header__navigation-list--close {
-
   @media #{$not-desktop} {
     display: none;
 
@@ -171,19 +172,19 @@
       transform: rotate(0);
     }
 
-    ~ .header__toggle:focus-visible:before {
-        background-color: var(--primary);
-        box-shadow: 0 16px 0 0 var(--primary);
+    ~ .header__toggle:focus-visible::before {
+      background-color: var(--primary, #2d383f);
+      box-shadow: 0 16px 0 0 var(--primary, #2d383f);
     }
 
-    ~ .header__toggle:active:before {
-        background-color: var(--active);
-        box-shadow: 0 16px 0 0 var(--active);
+    ~ .header__toggle:active::before {
+      background-color: var(--active, #1c3374);
+      box-shadow: 0 16px 0 0 var(--active, #1c3374);
     }
 
-    ~ .header__toggle:disabled:before {
-        background-color: var(--disabled);
-        box-shadow: 0 16px 0 0 var(--disabled);
+    ~ .header__toggle:disabled::before {
+      background-color: var(--disabled, #999999);
+      box-shadow: 0 16px 0 0 var(--disabled, #999999);
     }
 
     ~ .header__toggle::after {
@@ -193,14 +194,14 @@
   }
 
   @media #{$tablet-only} {
-  ~ .header__toggle {
-    inset-block-start: 27px;
-    inset-inline-start: 43px;
-  }
+    ~ .header__toggle {
+      inset-block-start: 27px;
+      inset-inline-start: 43px;
+    }
 
-  ~ .header__toggle::before {
-    inset-block-start: 5px;
-    box-shadow: 0 17px 0 0 #ffffff;
+    ~ .header__toggle::before {
+      inset-block-start: 5px;
+      box-shadow: 0 17px 0 0 #ffffff;
     }
 
     ~ .header__toggle::after {
@@ -215,6 +216,7 @@
 .header__navigation-link {
   @include link;
   @include button-big;
+
   display: inline-flex;
   padding: 3px;
 
@@ -233,12 +235,12 @@
   }
 
   &:active {
-    color: var(--active);
+    color: var(--active, #1c3374);
     text-decoration: transparent;
   }
 
   &:not([href]) {
-    color: var(--disabled);
+    color: var(--disabled, #999999);
     text-decoration: transparent;
     pointer-events: none;
   }
@@ -247,6 +249,7 @@
 .header__phone {
   @include link;
   @include title-h6;
+
   justify-self: end;
 
   @media #{$not-mobile} {
@@ -255,19 +258,19 @@
 
   &:focus-visible {
     outline: none;
-    color: var(--primary);
+    color: var(--primary, #2d383f);
   }
 
   &:hover {
-    color: var(--white-50);
+    color: var(--white-50, rgba(255, 255, 255, 0.5));
   }
 
   &:active {
-    color: var(--active);
+    color: var(--active, #1c3374);
   }
 
   &:not([href]) {
-    color: var(--disabled);
+    color: var(--disabled, #999999);
     pointer-events: none;
   }
 }

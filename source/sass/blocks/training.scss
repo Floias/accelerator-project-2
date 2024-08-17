@@ -1,5 +1,6 @@
 .training__container {
   @include slider($slider-s-mobile, $slider-s-tablet, $slider-s-desktop);
+
   margin-inline: auto;
   padding-block: 20px;
   display: grid;
@@ -7,7 +8,7 @@
 
   @media #{$not-mobile} {
     padding-block: 40px;
-    background-image: url('../../img/background-images/clouds-2@1x.png');
+    background-image: url("../../img/background-images/clouds-2@1x.png");
     background-repeat: no-repeat;
     background-position: left 257px bottom 53px;
   }
@@ -16,17 +17,20 @@
 .training__title {
   @include title-h3;
   @include title-shadow;
+
   position: relative;
   margin-bottom: 33px;
 }
 
 .training__wrapper p {
   @include text;
+
   margin-bottom: 3px;
 }
 
 .training__slider-title {
   @include title-h3;
+
   margin-block: 0 23px;
 
   @media #{$not-mobile} {
@@ -36,6 +40,7 @@
 
 .training__list {
   @include reset-list;
+
   display: grid;
   grid-template-columns: repeat(5, $slider-s-mobile);
 
@@ -65,7 +70,7 @@
 
 .training__img img {
   display: block;
-  object-fit:cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -76,7 +81,7 @@
 
 .training__item {
   padding: 15px;
-  outline: solid 1px var(--additional-20);
+  outline: solid 1px var(--additional-20, rgba(2, 102, 193, 0.1));
   outline-offset: -2px;
 
   @media #{$mobile-only} {
@@ -88,16 +93,19 @@
 
 .training__item h4 {
   @include title-h7;
+
   margin-block: 2px;
 }
 
 .training__item p {
   @include text-xs;
+
   margin-block: 11px 0;
 }
 
 .training__process-title {
   @include title-h5;
+
   margin-block: 1px 24px;
 
   @media #{$not-mobile} {
@@ -108,6 +116,7 @@
 .training__process-list {
   @include text-small;
   @include reset-list;
+
   display: grid;
   gap: 25px;
   position: relative;
@@ -126,12 +135,12 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 14px;
     left: 6px;
     width: 2px;
     height: calc(100% - 28px);
-    background-color: var(--additional-100);
+    background-color: var(--additional-100, #0266c1);
 
     @media #{$tablet-only} {
       display: none;
@@ -168,10 +177,10 @@
 
   &::before {
     margin-right: 5px;
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
-    background-color: var(--additional-100);
+    background-color: var(--additional-100, #0266c1);
     border-radius: 50%;
     flex-shrink: 0;
     order: -1;
@@ -187,44 +196,45 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
     flex-shrink: 0;
     order: -1;
   }
+}
 
-  &[data-process='map'] {
-    &::after {
-      background: url('/__spritemap#sprite-map-icon-view');
-    }
+.training__process-item[data-process="map"] {
+  &::after {
+    background: url("/__spritemap#sprite-map-icon-view");
+  }
+}
+
+.training__process-item[data-process="boots"] {
+  &::after {
+    background: url("/__spritemap#sprite-boots-view");
+  }
+}
+
+.training__process-item[data-process="pine-tree"] {
+  &::after {
+    background: url("/__spritemap#sprite-pine-tree-view");
   }
 
-  &[data-process='boots'] {
-    &::after {
-      background: url('/__spritemap#sprite-boots-view');
-    }
-  }
-
-  &[data-process='pine-tree'] {
-    &::after {
-      background: url('/__spritemap#sprite-pine-tree-view');
-    }
-
-    @media #{$desktop-only} {
-      &::before {
-        margin-left: -15px;
-      }
-    }
-  }
-
-  &[data-process='mountain'] {
-    &::after {
-      background: url('/__spritemap#sprite-mountain-view');
+  @media #{$desktop-only} {
+    &::before {
+      margin-left: -15px;
     }
   }
 }
+
+.training__process-item[data-process="mountain"] {
+  &::after {
+    background: url("/__spritemap#sprite-mountain-view");
+  }
+}
+
 
 .training__slider-wrapper {
   display: grid;
@@ -266,10 +276,11 @@
 
 .training__item-link {
   @include link;
+
   display: grid;
   place-items: center;
   width: 24px;
   height: 24px;
-  outline: solid 1px var(--primary-30);
+  outline: solid 1px var(--primary-30, rgb(45, 56, 63, 0.3));
   outline-offset: -1px;
 }

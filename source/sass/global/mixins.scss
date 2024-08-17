@@ -16,7 +16,7 @@
   margin-inline: auto;
 
   @media #{$not-mobile} {
-    width:  $width-t;
+    width: $width-t;
   }
 
   @media #{$desktop-only} {
@@ -206,6 +206,7 @@
 @mixin title-shadow {
   &::before {
     @include title-h2;
+
     position: absolute;
     top: -18px;
     content: attr(data-title);
@@ -234,25 +235,25 @@
 @mixin slider-buttons {
   display: grid;
   place-items: center;
-  background-color: var(--additional-100);
+  background-color: var(--additional-100, #0266c1);
   border-color: transparent;
   width: 37px;
   height: 35px;
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     width: 13px;
     height: 1px;
-    background-color: var(--white-100);
+    background-color: var(--white-100, #ffffff);
   }
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 6px;
     height: 6px;
-    border: solid 1px var(--white-100);
+    border: solid 1px var(--white-100, #ffffff);
     border-top: transparent;
     border-left: transparent;
     transform: translateX(2px) rotate(-45deg);

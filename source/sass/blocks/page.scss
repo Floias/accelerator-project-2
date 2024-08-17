@@ -11,20 +11,21 @@
   height: 100%;
   min-width: 320px;
   min-height: 100%;
-  font-family: var(--font-family);
+  font-family: var(--font-family, "Montserrat", "Arial", sans-serif);
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  color: var(--primary);
+  color: var(--primary, #2d383f);
 }
 
 .page__body:not(:has(.header__navigation-list--close)) {
   @media #{$not-desktop} {
     overflow: hidden;
     margin-right: 17px;
+
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       background: rgba(45, 56, 63, 0.6);
       inset: 0;
     }
@@ -34,13 +35,13 @@
 .page__body main {
   padding-top: 100px;
   flex-grow: 1;
-  background-image: url('../../img/background-images/tours-background-mobile@1x.png');
-    background-repeat: no-repeat;
-    background-position: right -204px top 677px;
+  background-image: url("../../img/background-images/tours-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: right -204px top 677px;
 
   @media #{$not-mobile} {
     padding-top: 82px;
-    background-image: url('../../img/background-images/tours-background-tablet@1x.png');
+    background-image: url("../../img/background-images/tours-background-tablet@1x.png");
     background-position: right -177px top 1025px;
   }
 

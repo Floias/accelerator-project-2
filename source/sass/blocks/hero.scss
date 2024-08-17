@@ -1,80 +1,80 @@
 .hero {
-  color: var(--white-100);
-  background-color: var(--additional-100);
+  color: var(--white-100, #ffffff);
+  background-color: var(--additional-100, #0266c1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
 }
 
-.hero:has(.hero__item--active[data-hero='caucasus']) {
-  background-image: url('../../img/background-images/hero-caucasus-mobile@1x.jpg');
+.hero:has(.hero__item--active[data-hero="caucasus"]) {
+  background-image: url("../../img/background-images/hero-caucasus-mobile@1x.jpg");
 
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/background-images/hero-caucasus-mobile@2x.jpg');
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/background-images/hero-caucasus-mobile@2x.jpg");
   }
 
   @media #{$mobile-tablet} {
-    background-image: url('../../img/background-images/hero-caucasus-tablet@1x.jpg');
+    background-image: url("../../img/background-images/hero-caucasus-tablet@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-caucasus-tablet@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-caucasus-tablet@2x.jpg");
     }
   }
 
   @media #{$tablet-desktop} {
-    background-image: url('../../img/background-images/hero-caucasus-desktop@1x.jpg');
+    background-image: url("../../img/background-images/hero-caucasus-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-caucasus-desktop@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-caucasus-desktop@2x.jpg");
     }
   }
 }
 
-.hero:has(.hero__item--active[data-hero='kamchatka']) {
-  background-image: url('../../img/background-images/hero-kamchatka-mobile@1x.jpg');
+.hero:has(.hero__item--active[data-hero="kamchatka"]) {
+  background-image: url("../../img/background-images/hero-kamchatka-mobile@1x.jpg");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/background-images/hero-kamchatka-mobile@2x.jpg');
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/background-images/hero-kamchatka-mobile@2x.jpg");
   }
 
   @media #{$mobile-tablet} {
-    background-image: url('../../img/background-images/hero-kamchatka-tablet@1x.jpg');
+    background-image: url("../../img/background-images/hero-kamchatka-tablet@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-kamchatka-tablet@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-kamchatka-tablet@2x.jpg");
     }
   }
 
   @media #{$tablet-desktop} {
-    background-image: url('../../img/background-images/hero-kamchatka-desktop@1x.jpg');
+    background-image: url("../../img/background-images/hero-kamchatka-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-kamchatka-desktop@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-kamchatka-desktop@2x.jpg");
     }
   }
 }
 
-.hero:has(.hero__item--active[data-hero='altai']) {
-  background-image: url('../../img/background-images/hero-altai-mobile@1x.jpg');
+.hero:has(.hero__item--active[data-hero="altai"]) {
+  background-image: url("../../img/background-images/hero-altai-mobile@1x.jpg");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/background-images/hero-altai-mobile@2x.jpg');
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/background-images/hero-altai-mobile@2x.jpg");
   }
 
   @media #{$mobile-tablet} {
-    background-image: url('../../img/background-images/hero-altai-tablet@1x.jpg');
+    background-image: url("../../img/background-images/hero-altai-tablet@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-altai-tablet@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-altai-tablet@2x.jpg");
     }
   }
 
   @media #{$tablet-desktop} {
-    background-image: url('../../img/background-images/hero-altai-desktop@1x.jpg');
+    background-image: url("../../img/background-images/hero-altai-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url('../../img/background-images/hero-altai-desktop@2x.jpg');
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-altai-desktop@2x.jpg");
     }
   }
 }
@@ -89,6 +89,7 @@
 
 .hero__list {
   @include reset-list;
+
   display: grid;
   grid-template-columns: repeat(3, $breakpoint-mobile);
 
@@ -119,6 +120,7 @@
 
 .hero__item h3 {
   @include title-h2;
+
   margin-bottom: 10px;
 
   @media #{$not-mobile} {
@@ -132,6 +134,7 @@
 
 .hero__item p {
   @include text-big;
+
   margin-bottom: 60px;
 
   @media #{$not-mobile} {
@@ -164,8 +167,9 @@
 .hero__item-button {
   @include link;
   @include button;
+
   margin-inline: auto;
-  background-color: var(--additional-100);
+  background-color: var(--additional-100, #0266c1);
   border-color: transparent;
   width: 180px;
 
@@ -177,23 +181,23 @@
 
   &:focus-visible {
     outline: none;
-    background-color: var(--white-100);
-    color: var(--active);
+    background-color: var(--white-100, #ffffff);
+    color: var(--active, #1c3374);
   }
 
   &:hover {
-    outline: solid 1px var(--active);
-    color: var(--active);
-    background-color: var(--white-100);
+    outline: solid 1px var(--active, #1c3374);
+    color: var(--active, #1c3374);
+    background-color: var(--white-100, #ffffff);
   }
 
   &:active {
-    background-color: var(--active);
-    color: var(--white-100);
+    background-color: var(--active, #1c3374);
+    color: var(--white-100, #ffffff);
   }
 
   &:not([href]) {
-    background-color: var(--disabled);
+    background-color: var(--disabled, #999999);
     pointer-events: none;
   }
 }
@@ -209,15 +213,16 @@
   @media #{$desktop-only} {
     padding-inline: 110px;
     text-align: right;
+
     --swiper-pagination-bottom: 90px;
   }
 }
 
 .hero__pagination button {
-  border: solid 1px var(--white-100);
+  border: solid 1px var(--white-100, #ffffff);
 
   &:focus-visible {
-    outline: solid 1px var(--white-50);
+    outline: solid 1px var(--white-50, rgba(255, 255, 255, 0.5));
     outline-offset: 2px;
   }
 
@@ -226,12 +231,12 @@
   }
 
   &:active {
-    background-color: var(--white-50);
+    background-color: var(--white-50, rgba(255, 255, 255, 0.5));
   }
 
   &:disabled {
-    background-color: var(--disabled);
-    border-color: var(--disabled);
+    background-color: var(--disabled, #999999);
+    border-color: var(--disabled, #999999);
     pointer-events: none;
   }
 }
@@ -248,15 +253,16 @@
 
 .hero__item-mark div {
   @include text-xs;
+
   padding: 13px 19px;
-  border: solid 1px var(--white-50);
+  border: solid 1px var(--white-50, rgba(255, 255, 255, 0.5));
   display: flex;
   gap: 8px;
 
   &::before {
     padding: 2px;
     display: block;
-    content: '';
+    content: "";
     width: 12px;
     height: 12px;
   }
@@ -264,13 +270,13 @@
 
 .hero__duration {
   &::before {
-    background: url('/__spritemap#sprite-duration-moon-view');
+    background: url("/__spritemap#sprite-duration-moon-view");
   }
 }
 
 .hero__complexity {
   &::before {
-    background: url('/__spritemap#sprite-complexity-view');
+    background: url("/__spritemap#sprite-complexity-view");
   }
 }
 
