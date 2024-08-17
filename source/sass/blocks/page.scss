@@ -16,6 +16,10 @@
   font-size: 14px;
   line-height: 1;
   color: var(--primary, #2d383f);
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .page__body:not(:has(.header__navigation-list--close)) {

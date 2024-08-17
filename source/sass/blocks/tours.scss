@@ -282,7 +282,7 @@
   }
 
   @media #{$desktop-only} {
-    padding-block: 65px;
+    padding-block: 65px 10px;
   }
 
   &:focus-visible {
