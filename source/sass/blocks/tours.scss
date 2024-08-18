@@ -4,7 +4,7 @@
   padding-block: 21px;
 
   @media #{$not-mobile} {
-    padding-block: 35px;
+    padding-block: 35px 40px;
   }
 
   @media #{$desktop-only} {
@@ -48,10 +48,12 @@
 
   @media #{$not-mobile} {
     grid-template-columns: repeat(4, 348px);
+    margin-bottom: 26px;
   }
 
   @media #{$desktop-only} {
     grid-template-columns: repeat(4, 410px);
+    margin-bottom: 54px;
   }
 }
 
@@ -69,11 +71,13 @@
     opacity: 0.3;
 
     @media #{$not-mobile} {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0.7;
     }
 
     @media #{$desktop-only} {
       background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0.3;
     }
   }
 }
@@ -206,7 +210,8 @@
   }
 
   @media #{$not-mobile} {
-    margin: 16px 0 15px;
+    margin: 16px 0 14px;
+    padding-bottom: 16px;
   }
 
   @media #{$desktop-only} {
@@ -278,11 +283,7 @@
   }
 
   @media #{$not-mobile} {
-    padding: 37px 20px 8px;
-  }
-
-  @media #{$desktop-only} {
-    padding-block: 65px 10px;
+    padding: 10px;
   }
 
   &:focus-visible {

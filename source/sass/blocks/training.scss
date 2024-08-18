@@ -24,7 +24,7 @@
 
   @media #{$desktop-only} {
     gap: 51px;
-    padding-top: 33px;
+    padding-block: 33px 40px;
   }
 }
 
@@ -185,8 +185,11 @@
 .training__process-item {
   display: flex;
   gap: 10px;
+  padding-right: 25px;
 
   @media #{$tablet-only} {
+    padding-right: 0;
+
     &:nth-child(2) {
       order: 1;
     }
