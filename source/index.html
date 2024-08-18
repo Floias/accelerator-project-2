@@ -293,7 +293,7 @@
             </div>
             <ul class="training__list">
               <li class="training__item">
-                <div class="training__img">
+                <div class="training__image-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/content-images/instructor-prokofiev-a@1x.webp 1x, ./img/content-images/instructor-prokofiev-a@2x.webp 2x" width="260" height="200">
                     <img src="./img/content-images/instructor-prokofiev-a@1x.jpg" srcset="./img/content-images/instructor-prokofiev-a@2x.jpg" alt="Наш тренер Александр Прокофьев." width="260" height="200">
@@ -311,7 +311,7 @@
                 <p>Строгий и&nbsp;внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
               </li>
               <li class="training__item">
-                <div class="training__img">
+                <div class="training__image-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/content-images/instructor-afinogenova-s@1x.webp 1x, ./img/content-images/instructor-afinogenova-s@2x.webp 2x" width="260" height="200">
                     <img src="./img/content-images/instructor-afinogenova-s@1x.jpg" srcset="./img/content-images/instructor-afinogenova-s@2x.jpg" alt="Наш тренер Светлана Афиногенова." width="260" height="200">
@@ -329,7 +329,7 @@
                 <p>Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
               </li>
               <li class="training__item">
-                <div class="training__img">
+                <div class="training__image-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/content-images/instructor-kolesnichenko-n@1x.webp 1x, ./img/content-images/instructor-kolesnichenko-n@2x.webp 2x" width="260" height="200">
                     <img src="./img/content-images/instructor-kolesnichenko-n@1x.jpg" srcset="./img/content-images/instructor-kolesnichenko-n@2x.jpg" alt="Наш тренер Надежда Колесниченко." width="260" height="200">
@@ -347,7 +347,7 @@
                 <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и&nbsp;уверенно.</p>
               </li>
               <li class="training__item">
-                <div class="training__img">
+                <div class="training__image-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/content-images/instructor-kaygorodov-f@1x.webp 1x, ./img/content-images/instructor-kaygorodov-f@2x.webp 2x" width="260" height="200">
                     <img src="./img/content-images/instructor-kaygorodov-f@1x.jpg" srcset="./img/content-images/instructor-kaygorodov-f@2x.jpg" alt="Наш тренер Федор Кайгородов." width="260" height="200">
@@ -365,7 +365,7 @@
                 <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
               </li>
               <li class="training__item">
-                <div class="training__img">
+                <div class="training__image-wrapper">
                   <picture>
                     <source type="image/webp" srcset="./img/content-images/instructor-vasnetsov-d@1x.webp 1x, ./img/content-images/instructor-vasnetsov-d@2x.webp 2x" width="260" height="200">
                     <img src="./img/content-images/instructor-vasnetsov-d@1x.jpg" srcset="./img/content-images/instructor-vasnetsov-d@2x.jpg" alt="Наш тренер Даниэль Васнецов." width="260" height="200">
@@ -416,13 +416,101 @@
           </div>
         </div>
       </section>
+      <section class="reviews" data-test="reviews">
+        <div class="reviews__slider">
+          <div class="reviews__slider-wrapper">
+            <h3 class="reviews__title">Отзывы</h3>
+            <div class="reviews__slider-control">
+              <button class="reviews__button reviews__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий отзыв.</span>
+              </button>
+              <button class="reviews__button reviews__button--next" type="button">
+                <span class="visually-hidden">Следующий отзыв.</span>
+              </button>
+            </div>
+          </div>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/review-frolov-a-desktop@1x.webp 1x, ./img/content-images/review-frolov-a-desktop@2x.webp 2x" width="258" height="253">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/review-frolov-a-tablet@1x.webp 1x, ./img/content-images/review-frolov-a-tablet@2x.webp 2x" width="186" height="237">
+                  <source type="image/webp" srcset="./img/content-images/review-frolov-a-mobile@1x.webp 1x, ./img/content-images/review-frolov-a-mobile@2x.webp 2x" width="250" height="169">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/review-frolov-a-desktop@1x.jpg 1x, ./img/content-images/review-frolov-a-desktop@2x.jpg 2x" width="258" height="253">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/review-frolov-a-tablet@1x.jpg 1x, ./img/content-images/review-frolov-a-tablet@2x.jpg 2x" width="186" height="237">
+                  <img src="./img/content-images/review-frolov-a-mobile@1x.jpg" srcset="./img/content-images/review-frolov-a-mobile@2x.jpg" alt="Фролов Александр на Алтае." width="250" height="169">
+                </picture>
+              </div>
+              <div>
+                <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+                <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                <h3>Фролов Александр</h3>
+                <span>38&nbsp;лет, Москва</span>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/review-solovyov-i-desktop@1x.webp 1x, ./img/content-images/review-solovyov-i-desktop@2x.webp 2x" width="258" height="253">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/review-solovyov-i-tablet@1x.webp 1x, ./img/content-images/review-solovyov-i-tablet@2x.webp 2x" width="186" height="237">
+                  <source type="image/webp" srcset="./img/content-images/review-solovyov-i-mobile@1x.webp 1x, ./img/content-images/review-solovyov-i-mobile@2x.webp 2x" width="250" height="169">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/review-solovyov-i-desktop@1x.jpg 1x, ./img/content-images/review-solovyov-i-desktop@2x.jpg 2x" width="258" height="253">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/review-solovyov-i-tablet@1x.jpg 1x, ./img/content-images/review-solovyov-i-tablet@2x.jpg 2x" width="186" height="237">
+                  <img src="./img/content-images/review-solovyov-i-mobile@1x.jpg" srcset="./img/content-images/review-solovyov-i-mobile@2x.jpg" alt="Иван Соловьёв на краю обрыва." width="250" height="169">
+                </picture>
+              </div>
+              <div>
+                <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идёт по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озёр и&nbsp;лесных ручьёв, остатков дач конца 19&nbsp;века. Было очень интересно!</p>
+                <p>Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам. Всем советую этот тур.</p>
+                <h3>Иван Соловьёв</h3>
+                <span>25&nbsp;лет, Владивосток</span>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/review-bazhenova-e-desktop@1x.webp 1x, ./img/content-images/review-bazhenova-e-desktop@2x.webp 2x" width="258" height="253">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/review-bazhenova-e-tablet@1x.webp 1x, ./img/content-images/review-bazhenova-e-tablet@2x.webp 2x" width="186" height="237">
+                  <source type="image/webp" srcset="./img/content-images/review-bazhenova-e-mobile@1x.webp 1x, ./img/content-images/review-bazhenova-e-mobile@2x.webp 2x" width="250" height="169">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/review-bazhenova-e-desktop@1x.jpg 1x, ./img/content-images/review-bazhenova-e-desktop@2x.jpg 2x" width="258" height="253">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/review-bazhenova-e-tablet@1x.jpg 1x, ./img/content-images/review-bazhenova-e-tablet@2x.jpg 2x" width="186" height="237">
+                  <img src="./img/content-images/review-bazhenova-e-mobile@1x.jpg" srcset="./img/content-images/review-bazhenova-e-mobile@2x.jpg" alt="Евгения Баженова в многодневном походе." width="250" height="169">
+                </picture>
+              </div>
+              <div>
+                <p>Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
+                <p>Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку! Я&nbsp;была рада быть в&nbsp;такой компании.</p>
+                <h3>Евгения Баженова</h3>
+                <span>23&nbsp;года, Кострома</span>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/review-pirogova-e-desktop@1x.webp 1x, ./img/content-images/review-pirogova-e-desktop@2x.webp 2x" width="258" height="253">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/review-pirogova-e-tablet@1x.webp 1x, ./img/content-images/review-pirogova-e-tablet@2x.webp 2x" width="186" height="237">
+                  <source type="image/webp" srcset="./img/content-images/review-pirogova-e-mobile@1x.webp 1x, ./img/content-images/review-pirogova-e-mobile@2x.webp 2x" width="250" height="169">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/review-pirogova-e-desktop@1x.jpg 1x, ./img/content-images/review-pirogova-e-desktop@2x.jpg 2x" width="258" height="253">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/review-pirogova-e-tablet@1x.jpg 1x, ./img/content-images/review-pirogova-e-tablet@2x.jpg 2x" width="186" height="237">
+                  <img src="./img/content-images/review-pirogova-e-mobile@1x.jpg" srcset="./img/content-images/review-pirogova-e-mobile@2x.jpg" alt="Елена Пирогова среди скал." width="250" height="169">
+                </picture>
+              </div>
+              <div>
+                <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
+                <p>У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
+                <h3>Елена Пирогова</h3>
+                <span>37&nbsp;лет, Тюмень</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 <!--     пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-    <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
