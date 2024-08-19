@@ -30,7 +30,7 @@ const initReviewsSlider = () => {
         slidesPerView: 1.2,
       },
       1440: {
-        slidesPerView: 1.7,
+        slidesPerView: 1.693,
         allowTouchMove: false,
       }
     },
