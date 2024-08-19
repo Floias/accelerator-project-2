@@ -8,7 +8,6 @@
   flex-direction: column;
   position: relative;
   margin: 0;
-  height: 100%;
   min-width: 320px;
   min-height: 100%;
   font-family: var(--font-family, "Montserrat", "Arial", sans-serif);
@@ -16,10 +15,6 @@
   font-size: 14px;
   line-height: 1;
   color: var(--primary, #2d383f);
-
-  &::-webkit-scrollbar {
-    width: 0;
-  }
 }
 
 .page__body:not(:has(.header__navigation-list--close)) {
@@ -46,7 +41,7 @@
   @media #{$not-mobile} {
     padding-top: 82px;
     background-image: url("../../img/background-images/tours-background-tablet@1x.png");
-    background-position: left 343px top 1024px;
+    background-position: right -177px top 1024px;
   }
 
   @media #{$desktop-only} {

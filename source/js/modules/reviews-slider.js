@@ -12,6 +12,7 @@ const initReviewsSlider = () => {
       prevSlideMessage: 'Previous slide',
       nextSlideMessage: 'Next slide',
     },
+    autoHeight: true,
     direction: 'horizontal',
     init: false,
     slideActiveClass: 'reviews__item--active',
@@ -24,15 +25,12 @@ const initReviewsSlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 30,
       },
       768: {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 1.2265,
       },
       1440: {
-        slidesPerView: 1,
-        spaceBetween: 120,
+        slidesPerView: 1.7,
         allowTouchMove: false,
       }
     },

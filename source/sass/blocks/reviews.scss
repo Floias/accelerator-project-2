@@ -1,9 +1,23 @@
 .reviews {
   padding-block: 20px;
+  overflow: hidden;
+}
+
+.reviews__container {
+  width: $breakpoint-mobile;
+  margin-inline: auto;
+
+  @media #{$not-mobile} {
+    width: $breakpoint-tablet;
+  }
+
+  @media #{$desktop-only} {
+    width: $breakpoint-desktop;
+  }
 }
 
 .reviews__slider {
-  @include slider($slider-s-mobile, $slider-s-tablet, $slider-s-desktop);
+  @include slider($slider-s-mobile, 693px, 1190px);
   overflow: visible;
 }
 
@@ -20,7 +34,7 @@
   }
 
   @media #{$desktop-only} {
-    padding-inline: 45px;
+    padding-inline: 120px;
     margin-bottom: 0;
   }
 }
@@ -28,9 +42,8 @@
 .reviews__title {
   @include title-h3;
   @include title-shadow;
-
+  margin: 0;
   position: relative;
-  margin-bottom: 32px;
 }
 
 .reviews__list {
@@ -54,13 +67,89 @@
 .reviews__item {
   padding: 20px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  height: min-content;
+
+  @media #{$not-mobile} {
+    display: grid;
+    grid-template-columns: 186px auto;
+    gap: 30px;
+  }
+
+  @media #{$desktop-only} {
+    display: grid;
+    grid-template-columns: 258px auto;
+    gap: 30px;
+  }
 }
 
 .reviews__item div:has(img) {
   width: 250px;
   height: auto;
+
+  @media #{$not-mobile} {
+    width: 186px;
+  }
+
+  @media #{$desktop-only} {
+    width: 258px;
+  }
+}
+
+.reviews__item div:has(img) img {
+  display: block;
 }
 
 .reviews__item p {
-  @include text-small;
+  font-weight: var(--font-weight, 400);
+  font-size: 12px;
+  line-height: 1.5;
+
+  @media #{$not-mobile} {
+    margin-top: 0;
+    @include text-xs;
+  }
+
+  @media #{$desktop-only} {
+    font-size: 14px;
+    line-height: 1.57;
+  }
+}
+
+.reviews__item h3 {
+  margin-top: 0;
+  font-weight: var(--font-weight-bold, 700);
+  font-size: 12px;
+
+  @media #{$not-mobile} {
+    @include caption-big;
+  }
+}
+
+.reviews__slider-wrapper {
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+
+  @media #{$not-mobile} {
+    margin-bottom: 25px;
+  }
+
+  @media #{$desktop-only} {
+    padding-top: 2px;
+    margin-bottom: 28px;
+  }
+}
+
+.reviews__slider-control {
+  @include slider-control;
+
+  @media #{$desktop-only} {
+    align-self: start;
+  }
+}
+
+.reviews__button {
+  @include slider-buttons;
 }
