@@ -41,7 +41,7 @@ const initAdvantagesSlider = () => {
     loop: true,
     breakpoints: {
       1440: {
-        slidesPerView: 3.36,
+        slidesPerView: 'auto',
         slidesPerGroup: 2,
         spaceBetween: 30,
         allowTouchMove: false,
@@ -52,6 +52,7 @@ const initAdvantagesSlider = () => {
   if (container) {
     addsSlides();
     swiper.init(container);
+    swiper.slideTo(2);
   }
 };
 
