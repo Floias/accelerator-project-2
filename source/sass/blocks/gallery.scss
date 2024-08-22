@@ -52,6 +52,10 @@
   position: relative;
 
   @media #{$not-mobile} {
+    margin-block: 20px 31px;
+  }
+
+  @media #{$desktop-only} {
     margin-block: 36px 24px;
   }
 }
