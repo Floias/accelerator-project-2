@@ -652,13 +652,29 @@
           </ul>
         </div>
       </section>
+      <section class="form" data-test="form">
+        <div class="form__container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+          <form class="form__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <label class="form__label" for="phone">
+              <span>Телефон</span>
+              <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите ваш телефон." pattern="2-[0-9]{3}-[0-9]{3}" required>
+            </label>
+            <label class="form__label" for="email">
+              <span>Email</span>
+              <input class="form__input" type="text" name="email" id="email" placeholder="Введите ваш email." required>
+            </label>
+            <button class="form__button" type="submit">Oтправить</button>
+          </form>
+        </div>
+        </section>
     </main>
 <!--     пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-    <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
