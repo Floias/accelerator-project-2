@@ -29,6 +29,7 @@
 .header__logo {
   justify-self: end;
   margin-bottom: 14px;
+  color: inherit;
 
   &[aria-current="page"] {
     pointer-events: none;
@@ -49,7 +50,7 @@
   }
 }
 
-.header__logo img {
+.header__logo svg {
   object-fit: cover;
   width: 142px;
   height: 42px;

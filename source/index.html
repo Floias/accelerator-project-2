@@ -14,7 +14,9 @@
     <header class="header" data-test="header">
       <div class="header__container">
         <a class="header__logo" href="index.html" aria-current="page">
-          <img src="/__spritemap#sprite-logo-view" alt="Логотип Lifetour." width="142" height="42">
+          <svg width="142" height="42">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
         </a>
         <nav class="header__navigation">
           <ul class="header__navigation-list header__navigation-list--close">
@@ -670,12 +672,103 @@
         </div>
         </section>
     </main>
+    <footer class="footer" data-test="footer">
+      <section class="footer__contacts contacts">
+        <div class="contacts__content">
+          <h2 class="contacts__title" data-title="Контакты">Контакты</h2>
+          <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+          <address class="contacts__address">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--tel">
+                <span class="contacts__item-title">Телефон:</span>
+                <a class="contacts__link" aria-label="Позвонить по номеру +7 (983) 745-45-45." href="tel:+79837454545">+7 983 745 45-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <span class="contacts__item-title">Email</span>
+                <a class="contacts__link" aria-label="Написать нам по адресу." href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item contacts__item--address">
+                <span class="contacts__item-title">Адрес:</span>
+                <div class="contacts__text">г. Москва, пр-т Мира,<br> д.&nbsp;14, офис 101</div>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="contacts__map-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/content-images/contacts-map-desktop@1x.webp 1x, ./img/content-images/contacts-map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/content-images/contacts-map-tablet@1x.webp 1x, ./img/content-images/contacts-map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" srcset="./img/content-images/contacts-map-mobile@1x.webp 1x, ./img/content-images/contacts-map-mobile@2x.webp 2x" width="320" height="343">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/content-images/contacts-map-desktop@1x.png 1x, ./img/content-images/contacts-map-desktop@2x.png 2x" width="600" height="324">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/content-images/contacts-map-tablet@1x.png 1x, ./img/content-images/contacts-map-tablet@2x.png 2x" width="768" height="340">
+            <img src="./img/content-images/contacts-map-mobile@1x.png" srcset="./img/content-images/contacts-map-mobile@2x.png" alt="фото с хэштегом лайфтур." width="320" height="343">
+          </picture>
+        </div>
+      </section>
+      <section class="footer__navigation">
+        <h2 class="footer__navigation-title visually-hidden">Полезные ссылки.</h2>
+        <div class="footer__navigation-wrapper">
+          <a class="footer__logo" href="index.html">
+            <svg width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Туры</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Обучение</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">О&nbsp;нас</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Фотографии</a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__phone" href="tel:88000000000">8 800 000-00-00</a>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Присоединяйтесь к нам ВКонтакте.</span>
+              <svg class="footer__social-image" width="18" height="18">
+                <use href="/__spritemap#sprite-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Найдите нас в Одноклассниках.</span>
+              <svg class="footer__social-image" width="18" height="18">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Lifetour на Reddit.</span>
+              <svg class="footer__social-image" width="18" height="18">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__link" href="#">Политика конфиденциальности</a>
+      </section>
+    </footer>
 <!--     пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
-    <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
 
