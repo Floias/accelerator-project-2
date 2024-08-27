@@ -93,7 +93,7 @@
 
 .advantages__item {
   padding: 20px 10px;
-  outline: solid 1px var(--additional-20, rgba(2, 102, 193, 0.1));
+  outline: solid 1px var(--additional-20, rgba(2, 102, 193, 0.2));
   outline-offset: -1px;
 
   @media #{$not-mobile} {

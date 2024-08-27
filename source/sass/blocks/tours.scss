@@ -296,10 +296,10 @@
   }
 
   &:hover {
-    color: var(--additional-20, rgba(2, 102, 193, 0.1));
+    color: var(--additional-20, rgba(2, 102, 193, 0.2));
 
     &::after {
-      border-color: var(--additional-20, rgba(2, 102, 193, 0.1));
+      border-color: var(--additional-20, rgba(2, 102, 193, 0.2));
     }
   }
 

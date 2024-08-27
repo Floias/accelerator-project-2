@@ -95,7 +95,6 @@
     }
 
     @media #{$not-mobile} {
-      padding-top: 82px;
       background-image: url("../../img/background-images/tours-background-tablet@1x.webp");
 
       @media (resolution >= 2dppx) {
