@@ -1,5 +1,6 @@
 .about__container {
   @include container;
+
   margin-inline: auto;
   padding-block: 20px;
 
@@ -62,6 +63,7 @@
 
 .about__content h3 {
   @include title-h5;
+
   margin-block: 26px 14px;
 
   @media #{$not-mobile} {
@@ -78,6 +80,7 @@
 
   @media #{$desktop-only} {
     @include text-small;
+
     padding-right: 75px;
   }
 }

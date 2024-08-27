@@ -1,0 +1,147 @@
+.js-webp {
+  .hero:has(.hero__item--active[data-hero="caucasus"]) {
+    background-image: url("../../img/background-images/hero-caucasus-mobile@1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-caucasus-mobile@2x.webp");
+    }
+
+    @media #{$mobile-tablet} {
+      background-image: url("../../img/background-images/hero-caucasus-tablet@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-caucasus-tablet@2x.webp");
+      }
+    }
+
+    @media #{$tablet-desktop} {
+      background-image: url("../../img/background-images/hero-caucasus-desktop@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-caucasus-desktop@2x.webp");
+      }
+    }
+  }
+
+  .hero:has(.hero__item--active[data-hero="kamchatka"]) {
+    background-image: url("../../img/background-images/hero-kamchatka-mobile@1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-kamchatka-mobile@2x.webp");
+    }
+
+    @media #{$mobile-tablet} {
+      background-image: url("../../img/background-images/hero-kamchatka-tablet@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-kamchatka-tablet@2x.webp");
+      }
+    }
+
+    @media #{$tablet-desktop} {
+      background-image: url("../../img/background-images/hero-kamchatka-desktop@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-kamchatka-desktop@2x.webp");
+      }
+    }
+  }
+
+  .hero:has(.hero__item--active[data-hero="altai"]) {
+    background-image: url("../../img/background-images/hero-altai-mobile@1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/hero-altai-mobile@2x.webp");
+    }
+
+    @media #{$mobile-tablet} {
+      background-image: url("../../img/background-images/hero-altai-tablet@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-altai-tablet@2x.webp");
+      }
+    }
+
+    @media #{$tablet-desktop} {
+      background-image: url("../../img/background-images/hero-altai-desktop@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/hero-altai-desktop@2x.webp");
+      }
+    }
+  }
+
+  .form {
+    background-image: url("../../img/background-images/form-mobile@1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/form-mobile@2x.webp");
+    }
+
+    @media #{$tablet-desktop} {
+      background-image: url("../../img/background-images/form-desktop@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/form-desktop@2x.webp");
+      }
+    }
+  }
+
+  .page__body main {
+    background-image: url("../../img/background-images/tours-background-mobile@1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/tours-background-mobile@2x.webp");
+    }
+
+    @media #{$not-mobile} {
+      padding-top: 82px;
+      background-image: url("../../img/background-images/tours-background-tablet@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/tours-background-tablet@2x.webp");
+      }
+    }
+
+    @media #{$desktop-only} {
+      padding-top: 126px;
+      background-image: url("../../img/background-images/tours-background-desktop@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/tours-background-desktop@2x.webp");
+      }
+    }
+  }
+
+  .training {
+    @media #{$not-mobile} {
+      background-image: url("../../img/background-images/clouds-2@1x.webp");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/clouds-2@2x.webp");
+      }
+    }
+  }
+
+  .advantages {
+    @media #{$tablet-only} {
+      background-image: url("../../img/background-images/clouds-2@1x.webp");
+      background-repeat: no-repeat;
+      background-position: left 213px top 240px;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/background-images/clouds-2@2x.webp");
+      }
+    }
+
+    @media #{$desktop-only} {
+      &::before {
+        background-image: url("../../img/background-images/clouds-3@1x.webp");
+
+        @media (resolution >= 2dppx) {
+          background-image: url("../../img/background-images/clouds-3@2x.webp");
+        }
+      }
+    }
+  }
+}

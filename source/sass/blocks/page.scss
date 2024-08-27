@@ -37,16 +37,30 @@
   background-image: url("../../img/background-images/tours-background-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: right -204px top 677px;
+  background-size: 346px 595px;
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/background-images/tours-background-mobile@2x.png");
+  }
 
   @media #{$not-mobile} {
     padding-top: 82px;
     background-image: url("../../img/background-images/tours-background-tablet@1x.png");
     background-position: right -177px top 1024px;
+    background-size: 602px 1630px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/tours-background-tablet@2x.png");
+    }
   }
 
   @media #{$desktop-only} {
     padding-top: 126px;
     background-image: url("../../img/background-images/tours-background-desktop@1x.png");
     background-position: right 0 top 800px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/tours-background-desktop@2x.png");
+    }
   }
 }

@@ -14,6 +14,7 @@
     <header class="header" data-test="header">
       <div class="header__container">
         <a class="header__logo" href="index.html" aria-current="page">
+          <span class="visually-hidden">Наш логотип.</span>
           <svg width="142" height="42">
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
@@ -659,11 +660,11 @@
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и&nbsp;наш оператор свяжется<br> с&nbsp;вами для консультации.</p>
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-            <label class="form__label" for="phone">
+            <label class="form__label">
               <span>Телефон</span>
               <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите ваш телефон." pattern="2-[0-9]{3}-[0-9]{3}" required>
             </label>
-            <label class="form__label" for="email">
+            <label class="form__label">
               <span>Email</span>
               <input class="form__input" type="text" name="email" id="email" placeholder="Введите ваш email." required>
             </label>
@@ -709,6 +710,7 @@
         <h2 class="footer__navigation-title visually-hidden">Полезные ссылки.</h2>
         <div class="footer__navigation-wrapper">
           <a class="footer__logo" href="index.html">
+            <span class="visually-hidden">Наш логотип.</span>
             <svg width="142" height="42">
               <use href="/__spritemap#sprite-logo"></use>
             </svg>
@@ -764,11 +766,6 @@
         <a class="footer__link" href="#">Политика конфиденциальности</a>
       </section>
     </footer>
-<!--     пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
     <script type="module" src="js/main.js"></script>
   </body>
 

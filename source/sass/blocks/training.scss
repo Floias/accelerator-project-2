@@ -3,6 +3,11 @@
     background-image: url("../../img/background-images/clouds-2@1x.png");
     background-repeat: no-repeat;
     background-position: left 303px bottom 158px;
+    background-size: 840px 280px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/background-images/clouds-2@2x.png");
+    }
   }
 
   @media #{$desktop-only} {
@@ -202,6 +207,7 @@
 
   @media #{$desktop-only} {
     @include text;
+
     display: grid;
     grid-template-columns: 25px auto;
     padding: 4px 10px 0;

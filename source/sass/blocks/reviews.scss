@@ -20,6 +20,7 @@
 
 .reviews__slider {
   @include slider($slider-s-mobile, $slider-s-tablet, 1190px);
+
   overflow: visible;
 
   @media #{$desktop-only} {
@@ -42,7 +43,7 @@
   }
 
   @media #{$desktop-only} {
-    padding : 47px 120px 0;
+    padding: 47px 120px 0;
     margin-bottom: 38px;
   }
 }
@@ -62,6 +63,7 @@
 .reviews__title {
   @include title-h3;
   @include title-shadow;
+
   margin-block: 16px;
   position: relative;
 
@@ -107,6 +109,9 @@
     display: grid;
     grid-template-columns: 258px auto;
     gap: 30px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--white-100, #ffffff);
   }
 }
 
@@ -162,6 +167,7 @@
 
   @media #{$not-mobile} {
     @include caption-big;
+
     margin-block: 0 4px;
     padding-top: 14px;
   }

@@ -268,31 +268,31 @@
     outline: solid 1px transparent;
 
     &::before {
-      background-color: var(--active);
+      background-color: var(--active, #1c3374);
     }
 
     &::after {
-      border-color: var(--active);
+      border-color: var(--active, #1c3374);
     }
   }
 
   &:hover {
     background-color: var(--white-100, #ffffff);
-    outline: solid 1px var(--active);
+    outline: solid 1px var(--active, #1c3374);
     outline-offset: -1px;
 
     &::before {
-      background-color: var(--active);
+      background-color: var(--active, #1c3374);
     }
 
     &::after {
-      border-color: var(--active);
+      border-color: var(--active, #1c3374);
     }
   }
 
   &:active {
     color: var(--white-100, #ffffff);
-    background-color: var(--active);
+    background-color: var(--active, #1c3374);
     outline: transparent;
 
     &::before {
@@ -325,12 +325,12 @@
   }
 
   &:hover {
-    outline: solid 1px var(--primary);
+    outline: solid 1px var(--primary, #2d383f);
   }
 
   &:active {
     color: var(--white-100, #ffffff);
-    background-color: var(--additional-100);
+    background-color: var(--additional-100, #0266c1);
     outline: transparent;
   }
 

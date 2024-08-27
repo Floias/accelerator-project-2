@@ -6,6 +6,7 @@ import { addsShadow } from './modules/about';
 import { initReviewsSlider } from './modules/reviews-slider';
 import { handleResize } from './modules/advantages-slider';
 import { handleGalleryResize } from './modules/gallery-slider';
+import { checkWebpFormat } from './utils/utils';
 
 document.addEventListener('DOMContentLoaded', () => {
   changesMenuState();
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTrainingSlider();
   addsShadow();
   initReviewsSlider();
+  checkWebpFormat();
 
   window.addEventListener('resize', handleResize);
   window.addEventListener('load', handleResize);
