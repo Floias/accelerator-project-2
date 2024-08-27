@@ -3,7 +3,7 @@
 }
 
 .reviews__container {
-  padding-block: 21px;
+  padding-block: 21px 18px;
   width: $breakpoint-mobile;
   margin-inline: auto;
 
@@ -13,7 +13,7 @@
   }
 
   @media #{$desktop-only} {
-    padding-block: 100px;
+    padding-block: 100px 87px;
     width: $breakpoint-desktop;
   }
 }

@@ -337,6 +337,7 @@
 
 .training__item-link {
   @include link;
+  @include social-shape;
 
   display: grid;
   place-items: center;

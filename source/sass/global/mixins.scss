@@ -263,7 +263,80 @@
     transform: rotate(180deg);
   }
 
+  &:focus-visible {
+    background-color: var(--white-100, #ffffff);
+    outline: solid 1px transparent;
+
+    &::before {
+      background-color: var(--active);
+    }
+
+    &::after {
+      border-color: var(--active);
+    }
+  }
+
+  &:hover {
+    background-color: var(--white-100, #ffffff);
+    outline: solid 1px var(--active);
+    outline-offset: -1px;
+
+    &::before {
+      background-color: var(--active);
+    }
+
+    &::after {
+      border-color: var(--active);
+    }
+  }
+
+  &:active {
+    color: var(--white-100, #ffffff);
+    background-color: var(--active);
+    outline: transparent;
+
+    &::before {
+      background-color: var(--white-100, #ffffff);
+    }
+
+    &::after {
+      border-color: var(--white-100, #ffffff);
+    }
+  }
+
   &:disabled {
-    background-color: #999999;
+    background-color: var(--disabled, #999999);
+    outline: none;
+    pointer-events: none;
+
+    &::before {
+      background-color: var(--white-100, #ffffff);
+    }
+
+    &::after {
+      border-color: var(--white-100, #ffffff);
+    }
+  }
+}
+
+@mixin social-shape {
+  &:focus-visible {
+    outline: solid 1px transparent;
+  }
+
+  &:hover {
+    outline: solid 1px var(--primary);
+  }
+
+  &:active {
+    color: var(--white-100, #ffffff);
+    background-color: var(--additional-100);
+    outline: transparent;
+  }
+
+  &:not([href]) {
+    color: var(--disabled, #999999);
+    outline: solid 1px var(--disabled, #999999);
+    pointer-events: none;
   }
 }
