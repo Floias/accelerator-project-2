@@ -232,7 +232,7 @@
     @media #{$desktop-only} {
       order: 1;
       justify-self: end;
-      margin: 0 0 8px 2px;
+      margin: auto 0 8px 2px;
     }
   }
 
@@ -249,12 +249,6 @@
 .training__process-item[data-process="map"] {
   &::after {
     background: url("/__spritemap#sprite-map-icon-view");
-  }
-
-  @media #{$desktop-only} {
-    &::before {
-      margin-top: 22px;
-    }
   }
 }
 

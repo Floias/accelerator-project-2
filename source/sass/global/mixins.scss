@@ -279,7 +279,7 @@
   &:hover {
     background-color: var(--white-100, #ffffff);
     outline: solid 1px var(--active, #1c3374);
-    outline-offset: -1px;
+    outline-offset: -2px;
 
     &::before {
       background-color: var(--active, #1c3374);
