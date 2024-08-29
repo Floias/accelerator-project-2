@@ -1,39 +1,16 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { reviewsSliderSettings } from '../data/data';
+import { createSliderSettingsWithNavigation } from '../utils/utils';
 
 const container = document.querySelector('.reviews__slider');
 const buttonPrev = container.querySelector('.reviews__button--prev');
 const buttonNext = container.querySelector('.reviews__button--next');
 
+const sliderOptions = createSliderSettingsWithNavigation('reviews', reviewsSliderSettings);
+
 const initReviewsSlider = () => {
   const swiper = new Swiper('.reviews__slider', {
-    modules: [Navigation],
-    a11y: {
-      prevSlideMessage: 'Previous slide',
-      nextSlideMessage: 'Next slide',
-    },
-    autoHeight: true,
-    direction: 'horizontal',
-    init: false,
-    slideActiveClass: 'reviews__item--active',
-    slideClass: 'reviews__item',
-    wrapperClass: 'reviews__list',
-    navigation: {
-      nextEl: '.reviews__button--next',
-      prevEl: '.reviews__button--prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1.2,
-      },
-      1440: {
-        slidesPerView: 1.693,
-        allowTouchMove: false,
-      }
-    },
+    ...sliderOptions,
     on: {
       slideChange: () => {
         if (swiper.isBeginning) {

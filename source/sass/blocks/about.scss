@@ -33,6 +33,10 @@
   }
 }
 
+.about__image-wrapper img {
+  display: block;
+}
+
 .about__content {
   padding-inline: 15px;
 
@@ -50,7 +54,7 @@
   @include title-shadow;
 
   position: relative;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media #{$not-mobile} {
     margin-bottom: 47px;

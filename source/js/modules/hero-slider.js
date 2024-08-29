@@ -1,34 +1,22 @@
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import { createSliderSettingsWithPagination } from '../utils/utils';
+import { heroSliderSettings } from '../data/data';
 
-const swiperOptions = {
-  modules: [Pagination],
-  direction: 'horizontal',
-  slidesPerView: 1,
-  init: false,
-  slideActiveClass: 'hero__item--active',
-  slideClass: 'hero__item',
-  wrapperClass: 'hero__list',
-  loop: true,
-  pagination: {
-    el: '.hero__pagination',
-    clickable: true,
-    bulletElement: 'button type="button"',
-  },
-  breakpoints: {
-    1440: {
-      allowTouchMove: false,
-    },
-  },
+const indexCount = 1;
+const tabindex = {
+  on: 0,
+  off: -1,
 };
+
+const swiperOptions = createSliderSettingsWithPagination('hero', heroSliderSettings);
 
 const refreshesTab = (activeIndex) => {
   const allButtons = document.querySelectorAll('.hero__item-button');
-  allButtons.forEach((button) => button.setAttribute('tabindex', -1));
+  allButtons.forEach((button) => button.setAttribute('tabindex', tabindex.off));
 
-  const activeSlideButton = document.querySelector(`.hero__item:nth-child(${activeIndex + 1}) .hero__item-button`);
+  const activeSlideButton = document.querySelector(`.hero__item:nth-child(${activeIndex + indexCount}) .hero__item-button`);
   if (activeSlideButton) {
-    activeSlideButton.setAttribute('tabindex', 0);
+    activeSlideButton.setAttribute('tabindex', tabindex.on);
   }
 };
 

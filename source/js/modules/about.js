@@ -1,4 +1,3 @@
-//data-title="Обучение"
 const title = document.querySelector('.about__content h2');
 const shadowValue = title.textContent;
 

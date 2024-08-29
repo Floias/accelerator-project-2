@@ -1,40 +1,16 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { trainingSliderSettings } from '../data/data';
+import { createSliderSettingsWithNavigation } from '../utils/utils';
 
 const container = document.querySelector('.training__slider');
 const buttonPrev = container.querySelector('.training__button--prev');
 const buttonNext = container.querySelector('.training__button--next');
 
+const sliderOptions = createSliderSettingsWithNavigation('training', trainingSliderSettings);
+
 const initTrainingSlider = () => {
   const swiper = new Swiper('.training__slider', {
-    modules: [Navigation],
-    a11y: {
-      prevSlideMessage: 'Previous slide',
-      nextSlideMessage: 'Next slide',
-    },
-    direction: 'horizontal',
-    init: false,
-    slideActiveClass: 'training__item--active',
-    slideClass: 'training__item',
-    wrapperClass: 'training__list',
-    navigation: {
-      nextEl: '.training__button--next',
-      prevEl: '.training__button--prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1440: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        allowTouchMove: false,
-      }
-    },
+    ...sliderOptions,
     on: {
       slideChange: () => {
         if (swiper.isBeginning) {
